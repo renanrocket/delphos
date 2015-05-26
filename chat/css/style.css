@@ -1,0 +1,177 @@
+/*tudo mudado*/
+div, span, ul, li{padding:0; margin:0;}
+
+div#contatos{
+	width:200px;
+	border-right:1px solid #333;
+	background:#ebebeb;
+	position: fixed;
+	right:0;
+	bottom:0;
+	height:100%;
+	overflow-y:auto;
+	overflow-x:hidden;
+	z-index: 99999;
+	text-align: left;
+}
+.contato_empresa{
+	display: block !important;
+	font-size: 10px !important;
+	margin-left: 35px !important;
+}
+div#contatos ul{
+	list-style-type:none;
+	margin:0;
+	width:100%;
+}
+div#contatos ul li{
+	float:left;
+	display:block;
+	width:100%;
+	margin-bottom:1px;
+	padding-bottom: 5px;
+}
+div#contatos ul li a{
+	text-decoration:none;
+	padding-top:5px;
+	font:13px "Trebuchet MS", arial, helvetica;
+	color:#333;
+	max-height: 40px;
+	display: inline-block;
+	white-space: nowrap;
+}
+div#contatos ul li .data{
+	font:11px "Trebuchet MS", arial, helvetica;
+	color:#333;
+	float:right;
+	position: relative;
+	right: 6px;
+	top: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+div#contatos ul li .data .online_span{
+	display: inline-block;
+	border-radius: 30px;
+	height: 6px;
+	width: 6px;
+	color: green;
+	background-color: green;
+	margin-top: 3px;
+}
+div#contatos ul li a img, div.janela div.topo span img{
+	margin-left: 5px;
+	margin-right: 5px;
+	max-height: 32px;
+	border:solid 2px white;
+	border-radius: 4px;
+	position:relative;
+	background-color: white;
+	float:left;
+
+}
+div#contatos ul li:hover{background:#ccc;}
+
+div#contatos div.contatos-topo span{
+	
+}
+
+div#janelas{
+	position:fixed;
+	bottom:0;
+	right:200px;
+	width:85%;
+}
+
+div#janelas div.janela{
+	width:200px;
+	background:#069;
+	margin-right:5px;
+	float:right;
+	margin-bottom:0;
+	border-left:1px solid #333;
+	border-right:1px solid #333;
+	position: absolute;
+	bottom:0 !important;
+}
+div.janela div.topo, div#contatos div.contatos-topo{
+	float:left;
+	width:200px;
+	background:#036;
+	height:50px;
+	border-bottom:1px  solid #333;
+	cursor:pointer;
+	color:white;
+	padding-top: 4px;
+	text-align: center;
+}
+div.janela div.topo span img{
+	margin-left: 1px;
+}
+div.janela div.fixar span img{
+	position: relative;
+	top: -20px;
+}
+div#contatos div.contatos-topo{height: 25px;}
+.fixar{height: 26px !important;}
+div.topo span{float:left; font:14px tahoma, arial, helvetica; color:#fff; margin:4px;}
+div.janela div.topo a#fechar, .close, .open{float:right; position: relative; top: -5px; right: 0px; padding:2px 6px; height:21px; font:15px tahoma, arial; color:#fff; 
+text-decoration:none;}
+div.janela div.topo a#fechar:hover {background:white; color:#036;}
+div.janela input[type=text]{
+	padding:3px; border:0;
+	outline:none;
+	background:#f4f4f4;
+	font:13px arial, tahoma;
+	color:#333;
+	width:194px;
+	text-transform: none;
+}
+div.mensagens{
+	float:left;
+	width:200px;
+	background:#fff;
+	height:170px;
+	border-bottom:1px solid #333;
+}
+div.mensagens ul.listar{
+	list-style-type:none;
+	float:left;
+	width:200px;
+	background:#fff;
+	height:170px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+div.mensagens ul.listar li{
+	float:left;
+	width:100%;
+	border-bottom:2px dotted white;
+	padding-bottom:3px;
+	text-align: left;
+	padding-right: 10px;	
+	background-color: #002D89;
+}
+div.mensagens ul.listar .voce{
+	text-align: right;
+	background-color: #47A3DA;
+}
+div.mensagens ul.listar li span{
+	font:11px tahoma, arial, helvetica;
+	float:left;
+	width:100%;
+	margin-top:3px;
+	color:white;
+}
+div.mensagens ul.listar li p{
+	font:13px tahoma, arial, helvetica;
+	float:left;
+	width:100%;
+	line-height: 10px;
+	font-weight: bolder;
+	color:white;
+}
+
+.offline{
+	opacity: 0.5;
+}
