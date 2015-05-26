@@ -1,0 +1,14 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: Calibri, 'Lato', Arial, sans-serif;
+	background-color: #870000;
+	text-align: center;
+	padding-top: 10%;
+	color:white;
+}
+a{
+	text-decoration: none;
+}

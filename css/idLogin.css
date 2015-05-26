@@ -1,0 +1,243 @@
+#msg div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border-style: dashed;
+	border-width: 1px;
+	border-color: #6a6a6a;
+	background-color: #d9d9d9;
+	width: 100%;
+	overflow: inherit;
+}
+#tooltip {
+	font-size: 10px;
+	font-weight: normal;
+	position: absolute;
+	z-index: 9999;
+	border: 1px solid #111;
+	background-color: #eee;
+	padding: 5px;
+	opacity: 0.85;
+	border-radius: 5px;
+}
+#tooltip h3, #tooltip div {
+	margin: 0;
+}
+#login{
+	text-transform: none;
+}
+#bodyLogin {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+    background: #47a3da;
+}
+#gradient-style {
+	font-size: 12px;
+	margin: 45px;
+	width: 65%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#gradient-style th {
+	text-align:center;
+	font-size: 13px;
+	font-weight: bolder;
+	padding: 8px;
+	/*background: #b9c9fe url('../img/gradhead.png') repeat-x;*/
+	background-color: #002d89;
+	color: white;
+}
+#gradient-style td {
+	padding: 8px;
+	color: white;
+}
+#gradient-style tbody tr:hover td {
+	/*font-weight: bolder;*/
+	background-color: white;
+	color: #002d89;
+}
+
+/* id da tabela orcamento corrigir a div*/
+#cliente div {
+	margin-right: 10px;
+	width: 48%;
+	display: inline-block;
+}
+
+#deletar {
+	border: 1px solid #720000;
+	color: #fff;
+	background-color: #720000;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#720000), to(#ff0000));
+	background-image: -moz-linear-gradient(19% 75% 90deg, #ff0000, #720000);
+	text-shadow: 0 1px 0 #666;
+	box-shadow: inset 0 1px 1px #fff, 0 2px 3px #c2c2c2;
+}
+#deletar:hover {
+	box-shadow: inset 0 2px 5px #fff, 0 2px 3px #666;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff0000), to(#720000));
+}
+#deletar:active {
+	box-shadow: inset 0 2px 5px #fff, 0 1px 3px #666;
+	top: 2px;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff0000), to(#330c0c));
+	background-image: -moz-linear-gradient(19% 75% 90deg, #330c0c, #ff0000);
+}
+#cupom {
+	font-family: Courier;
+	background-color: #f9e9ae;
+	background-image: url('../img/cupom_bottom.png');
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+#cupom #top {
+	background: #f9e9ae url('../img/cupom_top.png') repeat-x;
+}
+#cupom td {
+	text-align: center;
+}
+#cupom #total {
+	text-align: right;
+	font-weight: bold;
+}
+#cupomFormLista {
+	width: 100%;
+	line-height: 30px;
+	vertical-align: middle;
+	text-indent: 5px;
+	text-align: justify;
+	letter-spacing: 1px;
+}
+#cupomDiv {
+	top: 30px;
+}
+#cupomDiv p {
+	line-height: 120px;
+	color: #777;
+}
+#cupomDiv a{
+	color: #777;
+}
+#copy {
+	font-size: 10px;
+	position: fixed;
+	right: 37px;
+	bottom: 30px;
+	background-color: rgba(255,255,255, 0.6);
+	padding: 3px;
+	border-radius: 5px;
+	color: #02639d;
+}
+
+#imgMenuBg{
+	position:fixed;
+	right:30px;
+	bottom:65px;
+	z-index:-99;
+	width:15%;
+	max-width: 85px;
+	transform:rotate(20deg);
+	-ms-transform:rotate(20deg); /* IE 9 */
+	-webkit-transform:rotate(20deg); /* Safari and Chrome */
+	opacity:0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#sugestao ul{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#sugestao ul li{
+	cursor: hand;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 100%;
+}
+#sugestao ul li:nth-child(odd){
+	background-color: #10689a;
+}
+#sugestao ul li:nth-child(even){
+	background-color: #89b8d3;
+}
+
+
+
+#alerta_white{
+	color:white;
+}
+#alerta_red{
+	color:red;
+}
+tr:hover #alerta_white{
+	color:#47A3DA !important;
+}
+
+#sugestaoMobile{
+	height: 70px;
+	background-color: white;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#sugestaoMobile label{
+	padding: 0px;
+	vertical-align: middle;
+	display: table-cell;
+	vertical-align: center;
+}
+
+#teclado{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	background: white;
+	width: 100%;
+	margin: 0px !important;
+	padding: 0px !important;
+	z-index: 999999;
+}
+
+#info{
+	cursor: move;
+}
+
+@media screen and (max-width: 70em){
+	#sugestaoMobile{
+		height: 1.2em;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	body{
+		margin: 0px;
+		padding: 0px;
+		padding-top: 90px;
+	}
+		
+	#gradient-style{
+		font-size: 100%;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	#canvas{
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
+@media screen and (max-width: 70em) {
+	#copy {
+		padding: 0 !important;
+		margin: 0 !important;
+		margin-top: 50px;
+		position: relative;
+		bottom: 5px;
+		width:100%;
+		text-align: center;
+		background: none;
+		border-radius: 0px;
+		z-index: -99;
+		font-size: 1em;
+	}
+}
