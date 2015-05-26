@@ -1,0 +1,158 @@
+.form {
+	position: relative;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.form:before, 
+.form:after { 
+	content: " "; 
+	/*display: table; */
+}
+
+.form:after { 
+	clear: both; 
+}
+
+.column {
+	width: 33%;
+	padding-left: 1%;
+	padding-right: 1%;
+	/*padding: 10px 30px;*/
+	/*float: left;*/
+}
+
+.form label {
+	display: block;
+	padding: 40px 5px 5px 2px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.form input,
+.form textarea,
+.form select {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	line-height: 1.5;
+	padding: 5px 10px;
+	color: #FFF;
+	display: block;
+	width: 100%;
+}
+.form input[type='checkbox']{
+	padding: 5px;
+	width: auto;
+	display: inline-block;
+}
+
+.form input,
+.form textarea,
+.form select,
+.form label {
+	font-size: 1.1em;
+}
+
+.form input,
+.form textarea,
+.form select {
+	border: 3px solid #fff;
+}
+
+.form textarea {
+	min-height: 200px;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form label:active + input,
+.form label:active + textarea {
+	outline: none;
+	border: 3px solid #10689a;
+}
+
+.form select:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #10689a;
+    font-style: italic;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #10689a;
+    font-style: italic;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #10689a;
+    font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #10689a;
+    font-style: italic;
+}
+
+.submit-wrap {
+	text-align: center;
+	padding-top: 40px;
+	clear: both;
+}
+
+.form input.submit, .submit {
+	background: #10689a;
+	border: none;
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 1em;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+.form input.submit:hover, .submit:hover {
+	background: #1478b1;
+	color:white;
+}
+@media screen and (min-width: 70em){
+	.column {
+		width: 100%;
+	}
+	.form{
+		display: inline-flex;
+	}
+}
+
+@media screen and (max-width: 70em) {
+	.column {
+		width: 100%;
+		font-size: 4em;
+	}
+
+	.form input,
+	.form textarea,
+	.form select,
+	.form label {
+		font-size: 0.5em;
+	}
+
+	.column:nth-child(3) {
+		width: 100%;
+	}
+
+	#imgindex{
+		width: 10em;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	.column {
+		width: 100%;
+		padding: 10px;
+	}
+}
+
