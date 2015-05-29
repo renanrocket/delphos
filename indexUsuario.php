@@ -286,7 +286,7 @@ include 'templates/upLogin.inc.php';
 				}(document, \'script\', \'facebook-jssdk\'));</script>';
 				$html.= '<div class="fb-page" data-href="https://www.facebook.com/facerocketsolution" data-width="600" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facerocketsolution"><a href="https://www.facebook.com/facerocketsolution">Rocket Solution</a></blockquote></div></div>';
 			}else{
-				$html.= "<iframe width='500' height='458' src='http://iconosquare.com/widget.php?choice=myfeed&username=rocketsolution&show_infos=true&linking=instagram&width=500&height=458&mode=grid&layout_x=3&layout_y=2&padding=2&photo_border=true&background=FFFFFF&text=777777&widget_border=true&radius=5&border-color=DDDDDD&user_id=2059685499&time=1432862865557' allowTransparency='true' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:500px; height:458px;'></iframe>";
+				$html= "<iframe width='500' height='458' src='http://iconosquare.com/widget.php?choice=myfeed&username=rocketsolution&show_infos=true&linking=instagram&width=500&height=458&mode=grid&layout_x=3&layout_y=2&padding=2&photo_border=true&background=FFFFFF&text=777777&widget_border=true&radius=5&border-color=DDDDDD&user_id=2059685499&time=1432862865557' allowTransparency='true' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:500px; height:458px;'></iframe>";
 			}
 			
 			//$html.= "<br><br><iframe id='slide_prop' src='$endereco' frameborder='0' marginheight='0' marginwidth='0'></iframe>";
