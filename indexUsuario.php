@@ -273,15 +273,22 @@ include 'templates/upLogin.inc.php';
 			$endereco = "http://delphos.rocketsolution.com.br/plugins/QuotesRotator/index.php";
 			//$endereco = "plugins/QuotesRotator/index.php";
 			//$html = "<iframe src='//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacerocketsolution&amp;width=300&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=377867562315970' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:300px; height:80px;' allowTransparency='true'></iframe>";
-			$html = '<div id="fb-root"></div>
-			<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=378139222396146";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, \'script\', \'facebook-jssdk\'));</script>';
-			$html.= '<div class="fb-page" data-href="https://www.facebook.com/facerocketsolution" data-width="600" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facerocketsolution"><a href="https://www.facebook.com/facerocketsolution">Rocket Solution</a></blockquote></div></div>';
+			
+			$html = rand(1,2);
+			if($html==1){
+				$html = '<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=378139222396146";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, \'script\', \'facebook-jssdk\'));</script>';
+				$html.= '<div class="fb-page" data-href="https://www.facebook.com/facerocketsolution" data-width="600" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facerocketsolution"><a href="https://www.facebook.com/facerocketsolution">Rocket Solution</a></blockquote></div></div>';
+			}else{
+				$html.= "<iframe width='500' height='458' src='http://iconosquare.com/widget.php?choice=myfeed&username=rocketsolution&show_infos=true&linking=instagram&width=500&height=458&mode=grid&layout_x=3&layout_y=2&padding=2&photo_border=true&background=FFFFFF&text=777777&widget_border=true&radius=5&border-color=DDDDDD&user_id=2059685499&time=1432862865557' allowTransparency='true' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:500px; height:458px;'></iframe>";
+			}
+			
 			//$html.= "<br><br><iframe id='slide_prop' src='$endereco' frameborder='0' marginheight='0' marginwidth='0'></iframe>";
 			//$html.= "<br><br><iframe id='slide_note' src='http://g1.globo.com/?iframe=true&width=70%&height=95%' frameborder='0' marginheight='0' marginwidth='0'></iframe>";
 			//$html .= "<script src='http://g1.globo.com/Portal/G1V2/js/addNewsVertical.js' type='text/javascript'></script>";
