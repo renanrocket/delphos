@@ -41,15 +41,15 @@ $msg = "";
 for($j=0; $j<$qtdProd;$j++){//percorre a matriz do id do produto e do subTotal do produto
 	if(is_array($_POST[$array[$marcador]])){//no caso do orçamento ter mais de um produto
 		if($_POST[$array[$marcador]][$j]){//verifica se o produto é um produto cadastrado
-			$_POST[$array[$marcador+3]][$j] = str_replace(",", ".", $_POST[$array[$marcador+3]][$j]);//troca a virgula por ponto do subTotal
-			if(precoProduto($_POST[$array[$marcador]][$j], false, true)>$_POST[$array[$marcador+3]][$j]){//verifica se o maximoDescont > subTotal
+			$_POST[$array[$marcador+3]][$j] = real2($_POST[$array[$marcador+3]][$j]);//troca a virgula por ponto do subTotal
+            if(precoProduto($_POST[$array[$marcador]][$j], false, true)>$_POST[$array[$marcador+3]][$j]){//verifica se o maximoDescont > subTotal
 				$validaToken = true;
 				$cod .= "O produto <b>".$_POST[$array[$marcador+1]][$j]."</b> está com valor ";
 				$cod .= "(R$".real($_POST[$array[$marcador+3]][$j], true).") abaixo do permitido (R$".real(precoProduto($_POST[$array[$marcador]][$j], false, true)).")<br>";
 			}
 		}
 	}else{//no caso do orcamento ter apenas um produto
-		$_POST[$array[$marcador+3]] = str_replace(",", ".", $_POST[$array[$marcador+3]]);//troca a virgula por ponto do subTotal
+		$_POST[$array[$marcador+3]] = real2($_POST[$array[$marcador+3]]);//troca a virgula por ponto do subTotal
 		if(precoProduto($_POST[$array[$marcador]], false, true)>$_POST[$array[$marcador+3]]){//verifica se o maximoDescont > subTotal
 			$validaToken = true;
 			$cod .= "O produto <b>".$_POST[$array[$marcador+1]]."</b> está com valor ";

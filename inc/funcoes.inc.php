@@ -1348,7 +1348,7 @@ function orcamento($id_orcamento = null){
 				$statusOrcamento = $status;
 				$observacoesO = $observacoes;
 			}else{
-				$id = $id_cliente = $cliente = $fone = $observacoesO = $id_usuario = $data_emissao = $data_venda = null;
+				$id = $id_cliente = $cliente = $fone = $descPor = $descReal = $observacoesO = $id_usuario = $data_emissao = $data_venda = null;
 				$statusOrcamento = "";
 				echo "<input type='hidden' name='op' value='novo'>";
 			}
@@ -1480,7 +1480,7 @@ function orcamento($id_orcamento = null){
 							}
 							echo "<input type='hidden' name='tabelaItem[]' value='$tabela_item' id='tabelaItem_$i'>";
 							echo "<input type='hidden' name='idItem[]' value='$id_item' id='idItem_$i'>";
-							echo "<input type='text' name='item[]' value='$item' style='width:250px;' onkeyup='lookup(this.value, this.id)' id='item_$i' autocomplete='off'>";
+							echo "<input type='text' name='item[]' placeholder='Cod. ou nome do produto' value='$item' style='width:250px;' onkeyup='lookup(this.value, this.id)' id='item_$i' autocomplete='off'>";
 							echo "<div class='suggestionsBox' id='suggestions_$i' style='display: none;'><span style='float:right;'><input type='button' id='deletar' value='X' onclick=\"lookupOff();\"></span>";
 							echo "<div class='suggestionList' id='autoSuggestionsList_$i'></div></div>";
 						echo "</td>";
@@ -1505,8 +1505,14 @@ function orcamento($id_orcamento = null){
 				echo "<div class='obsOrcamento' style='display:none;'><textarea id='obsOrcamento' class='ckeditor' name='observacoesO' cols='55' rows='3'>$observacoesO</textarea></div>";
 				echo "</td>";
 				echo "</tr>";
-				
-				echo "<tr>";
+
+                echo "<tr>";
+                    echo "<td align='right' colspan='4'>Desconto</td>";
+                    echo "<td align='right'><input type='text' name='totalDescontoPor' value='".real($descPor)."' class='porcentagem totalValor' ".mascara("Valor2")."></td>";
+                    echo "<td><input type='text' name='totalDescontoReal' value='".real($descReal)."' class='preco totalValor' ".mascara("Valor2")."></td>";
+                echo "</tr>";
+
+                echo "<tr>";
 					echo "<td colspan='4'></td>";
 					echo "<td align='right'><input type='text' name='totalSubTotal' value='".real($subTotal)."' class='inputValor preco totalValor' ".mascara("Valor2")."></td>";
 					echo "<td><input type='text' name='totalItemTotal' value='".real($total)."' class='inputValor preco totalValor' ".mascara("Valor2")."></td>";
