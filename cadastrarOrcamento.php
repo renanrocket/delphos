@@ -42,13 +42,14 @@ if($op=="novo" or $op=="editar"){
 	}
 	$info = "";
 	$cor = "green";
-	$validaToken = false;//irá dizer se precisará de token ou não
+    $validaToken = false;//irá dizer se precisará de token ou não
 	$cod = "";
 	$msg = "";
 	
 	//verificar se os precos dos produtos estao abaixo do desconto maximo e pedir token
 	for($j=0; $j<$qtdItem;$j++){//percorre a matriz do id do produto e do subTotal do produto
-		$subTotal[$j] = str_replace(",", ".", $subTotal[$j]);
+
+        $subTotal[$j] = real2($subTotal[$j]);
 		if($tabelaItem[$j]=="produto" and is_numeric($idItem[$j]) and precoProduto($idItem[$j], false, true)>$subTotal[$j]){
 			$validaToken = true;
 			$cod .= "O produto <b>".$item[$j]."</b> está com valor ";
@@ -66,6 +67,11 @@ if($op=="novo" or $op=="editar"){
 		$cod .= "Cliente $contato não é cadastrado e a forma de pagamento está como ".registro($pgaForma, "pagamento_forma", "forma_pagamento").".";
 		$cod .= "<br>Para clientes não cadastrados aceitamos apenas pagamentos a Vista.";
 	}
+
+    //Se o usuário tiver acesso ao token
+    if(getCredencialUsuario("administrativoToken.php")){
+        $validaToken = false;
+    }
 	
 	if($validaToken and !isset($token)){//precisa de token
 		//pergunta se realmente quer cadastrar o cliente
