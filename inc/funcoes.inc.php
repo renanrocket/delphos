@@ -1460,7 +1460,7 @@ function orcamento($id_orcamento = null){
 							$item = $id_item;
 						}
 					}else{
-						$id_item = $item = null;
+						$id_item = $item = $descricao_item = null;
 						$quantidade = $valor_produto = 0;
 						$tabela_item= "item";
 					}
@@ -1493,9 +1493,13 @@ function orcamento($id_orcamento = null){
 						$itemTotal = $quantidade * $valor_produto;
 						$subTotal += $valor_produto;
 						$total += $itemTotal;
-						echo "<td><input type='text' name='itemTotal[]' value='".real($itemTotal)."' class='inputValor totalValor preco' id='itemTotal_$i' ";
+						echo "<td rowspan='2'><input style='height:100%; font-size:3em; width: 230px;' type='text' name='itemTotal[]' value='".real($itemTotal)."' class='inputValor totalValor preco' id='itemTotal_$i' ";
 						echo mascara("Valor2", null, "autocomplete='off'", $js2, $js2, $js2)."></td>";
 					echo "</tr>";
+                    echo "<tr class='campoItem'>";
+                        echo "<td></td>";
+                        echo "<td colspan='4'><input type='text' name='descItem[]' value='$descricao_item' placeholder='Descrição para este produto (opcional)'></td>";
+                    echo "</tr>";
 				}
 				
 				echo "<tr>";
@@ -1508,14 +1512,15 @@ function orcamento($id_orcamento = null){
 
                 echo "<tr>";
                     echo "<td align='right' colspan='4'>Desconto</td>";
-                    echo "<td align='right'><input type='text' name='totalDescontoPor' value='".real($descPor)."' class='porcentagem totalValor' ".mascara("Valor2")."></td>";
-                    echo "<td><input type='text' name='totalDescontoReal' value='".real($descReal)."' class='preco totalValor' ".mascara("Valor2")."></td>";
+                    echo "<td align='right'><input type='text' name='totalDescontoPor' value='".real($descPor)."' class='porcentagem totalValor' ".mascara("Valor2")." onblur='calcularTotalDescPor();'></td>";
+                    echo "<td><input type='text' name='totalDescontoReal' value='".real($descReal)."' class='preco totalValor' ".mascara("Valor2")." onblur='calcularTotal();'></td>";
                 echo "</tr>";
 
                 echo "<tr>";
 					echo "<td colspan='4'></td>";
 					echo "<td align='right'><input type='text' name='totalSubTotal' value='".real($subTotal)."' class='inputValor preco totalValor' ".mascara("Valor2")."></td>";
-					echo "<td><input type='text' name='totalItemTotal' value='".real($total)."' class='inputValor preco totalValor' ".mascara("Valor2")."></td>";
+                    $total = $total - $descReal;
+                    echo "<td><input type='text' name='totalItemTotal' value='".real($total)."' class='inputValor preco totalValor' ".mascara("Valor2")."></td>";
 				echo "</tr>";
 				echo "<tr>";
 					$sql= query("select * from conta where referido='$id_orcamento' and tabela_referido='orcamento'");

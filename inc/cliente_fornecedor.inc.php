@@ -33,14 +33,14 @@
 		die;
 	}
 	
-	
+
 	if(!$db) {
 		// Show error if we cannot connect.
 		echo 'ERROR: Não pode se conectar com o banco de dados.<br>'. mysqli_connect_error();
 	} else {
 		// Is there a posted query string?
 		if(isset($_POST['search'])) {
-			$search = $db->real_escape_string($_POST['search']);
+			$search = utf8_decode($db->real_escape_string($_POST['search']));
 			$tipo = $_POST['tipo'];
 			
 			// Is the string length greater than 0?
@@ -125,6 +125,43 @@
 				}else {
 					echo 'ERROR: Existe um problema com a query.';
 				}
+                $query = null;
+                $query = $db->query("SELECT * FROM orcamento WHERE cliente LIKE '%$search%' or fone like '%$search%' and id_cliente='0' group by cliente");
+                if($query) {
+                    // While there are results loop through them - fetching an Object (i like PHP5 btw!).
+                    $li = "li1";
+                    while ($result = $query ->fetch_object()) {
+                        // Format the results, im using <li> for the list, you can change it.
+                        // The onClick function fills the textbox with the result.
+
+                        //calcular o preco do produto
+
+                        // YOU MUST CHANGE: $result->value to $result->your_colum
+                        $cliente = $result->cliente;
+                        $fone = $result->fone;
+
+
+                        $cod = "<li class='$li' onclick=\"preencherCliente('', '', '$cliente', '', '', '', ";
+                        $cod .= "'', '', '$fone', '', '', '', '', ";
+                        $cod .= "'', '', '', '', '');\">";
+
+                        $cod .= "<table class='listaItensOrcamento'><tr><td class='nomeLista' style='white-space:nowrap;'><span>";
+                        $cod .="$cliente $fone";
+
+                        $cod .= "</li>";
+
+                        $cod .= "</span></td></tr></table>";
+
+                        echo $cod;
+
+                        if($li=="li1"){
+                            $li= "li2";
+                        }else{
+                            $li="li1";
+                        }
+                    }
+                }
+
 			} else {
 				// Dont do anything.
 			} // There is a search.

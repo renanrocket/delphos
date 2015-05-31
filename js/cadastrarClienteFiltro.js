@@ -60,7 +60,11 @@ function clienteShow(stringCliente, tipoBusca) {
 }
 
 function preencherCliente(id, tipo, nome, razao_social, cpf_cnpj, rg_ie, data_nascimento, email, fone1, fone2, endereco, numero, bairro, cidade, CIDADE, estado, cep, ref) {
-	
+
+    $('input[name$="nome"]').val(nome);
+    $('input[name$="contato"]').val(nome);
+    $('input[name$="telefoneC"]').val(fone1);
+    if(id){
 	//chamada da funcao para setar o tipo de pessoa no orcamento
 	tipoPessoaDoc(tipo);
 
@@ -77,11 +81,9 @@ function preencherCliente(id, tipo, nome, razao_social, cpf_cnpj, rg_ie, data_na
 		$("#tipo_pessoa").html(script);	
 	}
 
-	$('input[name$="contato"]').val(nome);
-	$('input[name$="telefoneC"]').val(fone1);
+
 	
 	$('input[name$="id_cliente_fornecedor"]').val(id);
-	$('input[name$="nome"]').val(nome);
 	$('input[name$="doc1"]').val(cpf_cnpj);
 	$('input[name$="doc2"]').val(rg_ie);
 	$('input[name$="data"]').val(data_nascimento);
@@ -99,7 +101,6 @@ function preencherCliente(id, tipo, nome, razao_social, cpf_cnpj, rg_ie, data_na
 
 	if (id == "") {
 		$('#obsCadastro').val("");
-		//$('#obsCadastro').html("<textarea name=\"observacoes\"></textarea>");
 	} else {
 
 		$.post("inc/cliente_fornecedor.inc.php", {
@@ -108,33 +109,17 @@ function preencherCliente(id, tipo, nome, razao_social, cpf_cnpj, rg_ie, data_na
 		}, function(data) {
 			if (data.length > 0) {	
 				$('#obsCadastro').html(data);
-				//$('#obsCadastro').html("<textarea name=\"observacoes\">" + data + "</textarea>");
 			}
 		});
 	}
 	
-	
-	mudaForm();
+
+        mudaForm();
+    }
 	$("input[name='cadastrarCliente']").val("false");// essa linha de codigo deve estar debaixo da funcao mudaForm();
 	lookupOff();
 }
-/*
-function tipoPessoaDoc(valor) {
-	if (valor == "j") {
-		document.getElementById('nome').innerHTML = "Nome da Empresa<br><input type='text' name='nome' style='width:99%;'>";
-		document.getElementById('doc1').innerHTML = "CNPJ<br><input type='text' name='doc1' style='width:99%;' maxlength='18' onKeyDown='Mascara(this,Cnpj);' onKeyPress='Mascara(this,Cnpj);' onKeyUp='Mascara(this,Cnpj);'>";
-		document.getElementById('doc2').innerHTML = "IE<br><input type='text' name='doc2' style='width:99%;' onKeyDown='Mascara(this,Integer);' onKeyPress='Mascara(this,Integer);' onKeyUp='Mascara(this,Integer);'>";
-		document.getElementById('datadoc').innerHTML = "Fundação";
-		document.getElementById('razaoSocial').style.display = "";
-	} else {
-		document.getElementById('nome').innerHTML = "nome<br><input type='text' name='nome'style='width:99%;' >";
-		document.getElementById('doc1').innerHTML = "CPF<br><input type='text' name='doc1' style='width:99%;' maxlength='14' onKeyDown='Mascara(this,Cpf);' onKeyPress='Mascara(this,Cpf);' onKeyUp='Mascara(this,Cpf);'>";
-		document.getElementById('doc2').innerHTML = "RG<br><input type='text' name='doc2' style='width:99%;' onKeyDown='Mascara(this,Integer);' onKeyPress='Mascara(this,Integer);' onKeyUp='Mascara(this,Integer);'>";
-		document.getElementById('datadoc').innerHTML = "Nascimento";
-		document.getElementById('razaoSocial').style.display = "none";
-	}
-}
-*/
+
 function tipoPessoaDoc(valor) {
 	if (valor == "j") {
 		$("#cliente").html("<div>Nome da Empresa<br><input type='text' name='nome' onBlur='cloneInput(this.value, \"contato\");'></div><div>Razão Social<br><input type='text' name='razao_social'></div>");

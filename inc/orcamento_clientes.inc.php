@@ -87,7 +87,7 @@
 						$cod .= "'$data_nascimento', '$email', '$fone1', '$fone2', '$endereco', '$numero', '$bairro', ";
 						$cod .= "'$cidade', '$CIDADE', '$estado', '$cep');\">";
 						
-						
+
 						
 						switch ($tipo) {
 							case 'f':

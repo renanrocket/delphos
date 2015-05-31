@@ -1,5 +1,6 @@
 // JavaScript Document
 //funcao para corrigir problema de voltar historico navegador e a quantidade item ser diferente de 1
+
 window.onload = function() {
 	if ($('input[name$="op"]').val() == "novo") {
 		$('#qtdItem').val(1);
@@ -102,8 +103,10 @@ $(function() {
 	removeCampo();
 	$(".adicionarCampo").click(function() {
 		lookupOff();
-		novoCampo = $(".itens tr.campoItem:first").clone();
-		novoCampo.find("input").val("");
+        novoCampo = $(".itens tr.campoItem:first").clone();
+        novoCampoL = $(".itens tr.campoItem:last").clone();
+        novoCampo.find("input").val("");
+        novoCampoL.find("input").val("");
 		//verifica se o infame do usuario apaga um campo q n eh o ultimo e corrige o erro causado pelo usuario
 		$('#qtdItem').val(parseInt($('#qtdItem').val()) + 1);
 		var qtdItem = $('#qtdItem').val();
@@ -145,7 +148,8 @@ $(function() {
 		novoCampo.find("div[class='suggestionsBox']").attr("id", "suggestions_" + qtdItem);
 		novoCampo.find("input[id='deletar']").attr("value", "X");
 		novoCampo.find("div[class='suggestionList']").attr("id", "autoSuggestionsList_" + qtdItem);
-		novoCampo.insertAfter(".itens tr.campoItem:last");
+        novoCampo.insertAfter(".itens tr.campoItem:last");
+        novoCampoL.insertAfter(".itens tr.campoItem:last");
 
 		removeCampo();
 	});
@@ -167,8 +171,10 @@ function precoTotalItem(quant) {
 //determina todos os valores do orçamento
 function calcularTotal() {
 	var cont = $('#qtdItem').val();
-	var subT = 0;
-	var total = 0;
+    var subT = 0;
+    var total = 0;
+    var descPor = 0;
+    var descReal = $('input[name="totalDescontoReal"]').val().replace(",", ".");
 	var quant;
 	var subTotal;
 
@@ -185,12 +191,65 @@ function calcularTotal() {
 			//totalGlobal
 		}
 	}
+
+    descPor = parseFloat(100-((total - descReal) * 100 / total));
+    descReal = parseFloat(descReal);
+    total = total - descReal;
+
+    if (isNaN(descPor) == false) {
+        $('input[name="totalDescontoPor"]').val(descPor.toFixed(2).replace(".", ","));
+    }
+    if (isNaN(descReal) == false) {
+        $('input[name="TotalDescontoReal"]').val(descReal.toFixed(2).replace(".", ","));
+    }
 	if (isNaN(subT) == false) {
 		$('input[name="totalSubTotal"]').val(subT.toFixed(2).replace(".", ","));
 	}
 	if (isNaN(total) == false) {
 		$('input[name="totalItemTotal"]').val(total.toFixed(2).replace(".", ","));
 	}
+
+}
+function calcularTotalDescPor(){
+
+    var cont = $('#qtdItem').val();
+    var subT = 0;
+    var total = 0;
+    var descPor = $('input[name="totalDescontoPor"]').val().replace(",", ".");
+    var descReal = 0
+    var quant;
+    var subTotal;
+
+    for (var i = 1; i <= cont; i++) {
+        if ($('#subTotal_' + i).val() != undefined) {
+            quant = parseFloat($('#quantidade_' + i).val());
+            subTotal = parseFloat($('#subTotal_' + i).val().replace(",", "."));
+            subT += parseFloat($('#subTotal_' + i).val().replace(",", "."));
+            // subtotalGlobal
+            if (isNaN(quant * subT) == false) {
+                $('#itemTotal_' + i).val((quant * subTotal).toFixed(2).toString().replace(".", ","));
+            }
+            total += parseFloat($('#itemTotal_' + i).val().replace(",", "."));
+            //totalGlobal
+        }
+    }
+
+    descReal = parseFloat(total * descPor/100);
+    descPor = parseFloat(descPor);
+    total = total - descReal;
+
+    if (isNaN(descPor) == false) {
+        $('input[name="totalDescontoPor"]').val(descPor.toFixed(2).replace(".", ","));
+    }
+    if (isNaN(descReal) == false) {
+        $('input[name="totalDescontoReal"]').val(descReal.toFixed(2).replace(".", ","));
+    }
+    if (isNaN(subT) == false) {
+        $('input[name="totalSubTotal"]').val(subT.toFixed(2).replace(".", ","));
+    }
+    if (isNaN(total) == false) {
+        $('input[name="totalItemTotal"]').val(total.toFixed(2).replace(".", ","));
+    }
 
 }
 
@@ -267,52 +326,10 @@ function filtroOrcamento() {
 				}
 			}
 		}
-
-
-		//verificando duplicidade de itens
-		/*
-		for (var i = 1; i <= qtdItem.value; i++) {
-			if (document.getElementById('idItem_' + i) != null) {
-
-				for (var j = 1; j <= qtdItem.value; j++) {
-
-					if (document.getElementById('idItem_' + j) != null) {
-
-						if (document.getElementById('tabelaItem_' + j).value == document.getElementById('tabelaItem_' + i).value && document.getElementById('idItem_' + j).value == document.getElementById('idItem_' + i).value && j != i && document.getElementById('idItem_' + i).value != "") {
-							if (alerta.indexOf("Existem itens duplicados.\n") < 0) {
-								alerta += "Existem itens duplicados.\n";
-							}
-							document.getElementById('item_' + j).className = document.getElementById('item_' + i).className = "avisoInput";
-							valida = false;
-						} else {
-							if (document.getElementById('idItem_' + j).className != "avisoInput") {
-								document.getElementById('idItem_' + j).className = "";
-							}
-							if (document.getElementById('idItem_' + i).className != "avisoInput") {
-								document.getElementById('idItem_' + i).className = "";
-							}
-						}
-
-						if (document.getElementById('item_' + j).value == document.getElementById('item_' + i).value && j != i) {
-							if (alerta.indexOf("Existem itens duplicados.\n") < 0) {
-								alerta += "Existem itens duplicados.\n";
-							}
-							document.getElementById('item_' + j).className = document.getElementById('item_' + i).className = "avisoInput";
-							valida = false;
-						} else {
-							if (document.getElementById('idItem_' + j).className != "avisoInput") {
-								document.getElementById('idItem_' + j).className = "";
-							}
-							if (document.getElementById('idItem_' + i).className != "avisoInput") {
-								document.getElementById('idItem_' + i).className = "";
-							}
-						}
-
-					}
-				}
-			}
-		}
-		*/
+        if($('input[name="totalItemTotal"]').val()<0){
+            alerta += "Orçamento com total negativo.\n Verifique o desconto.\n";
+            valida = false;
+        }
 
 	}
 	

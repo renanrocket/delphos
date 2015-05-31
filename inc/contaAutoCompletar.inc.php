@@ -31,7 +31,7 @@ if(isset($_COOKIE["id_empresa"])){
 }
 
 extract($_GET);
-
+$nome = utf8_decode($nome);
 if($op == "completarEntidade"){
 	$instrucao1 = "select * from cliente_fornecedor where nome like '%$nome%'";
 	$instrucao2 = "select * from usuario where nome like '%$nome%'";

@@ -38,7 +38,7 @@
 	// Is there a posted query string?
 	if(isset($_POST["queryString"])) {
 
-		$queryString = $db->real_escape_string($_POST["queryString"]);
+		$queryString = utf8_decode($db->real_escape_string($_POST["queryString"]));
 		$inputId = $db->real_escape_string($_POST["id"]);
 		
 		// Is the string length greater than 0?

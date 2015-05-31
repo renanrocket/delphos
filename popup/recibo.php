@@ -20,7 +20,7 @@ function recibo($ID){
 			$status = "Recebemos do(a)";
 			$ass = registro($id_usuario, "usuario", "nome");
 			if(registro($id_usuario, "usuario", "ass_digital_usar")){
-	        	$ass_img = "<img src='../".registro($id_usuario, "usuario", "ass_digital_end_min")."'>";
+	        	$ass_img = "<img style='border-bottom: solid 1px black;' src='../".registro($id_usuario, "usuario", "ass_digital_end_min")."'>";
 	        }else{
 	        	$ass_img = "<br><br>__________________________________________";
 	        }
@@ -60,26 +60,33 @@ function recibo($ID){
 					echo "<td align='center' class='tdNone'>";
 						echo "<table align='center'>";
 							echo "<tr>";
-								echo "<td align='center' class='tdNone' style='white-space: nowrap;'>N&ordm; da Conta</td>";
-								echo "<td align='left' class='tdNone'>$id_conta</td>";
-								echo "<td align='center' class='tdNone' style='white-space: nowrap;'>N&ordm; do Recibo</td>";
-								echo "<td align='left' class='tdNone'>$ID</td>";
+								echo "<td align='center' class='tdNone' style='vertical-align:middle; white-space: nowrap;'>N&ordm; da Conta</td>";
+								echo "<td align='left' class='tdNone' style='vertical-align:middle;'>$id_conta</td>";
+								echo "<td align='center' class='tdNone' style='vertical-align:middle; white-space: nowrap;'>N&ordm; do Recibo</td>";
+								echo "<td align='left' class='tdNone' style='vertical-align:middle;'>$ID</td>";
 								if(is_numeric($referido) and $tabela_referido=='orcamento'){
-									echo "<td align='center' class='tdNone' style='white-space: nowrap;'>N&ordm; Orçamento</td>";
-									echo "<td align='left' class='tdNone'>$referido</td>";
+									echo "<td align='center' class='tdNone' style='vertical-align:middle; white-space: nowrap;'>N&ordm; Orçamento</td>";
+									echo "<td align='left' class='tdNone' style='vertical-align:middle;'>$referido</td>";
+                                    $sqlDesc = query("select descReal from orcamento where id='$referido'");
+                                    extract(mysqli_fetch_assoc($sqlDesc));
 								}elseif(is_numeric($referido) and $tabela_referido=='pdv'){
-									echo "<td align='center' class='tdNone' style='white-space: nowrap;'>N&ordm; PDV</td>";
-									echo "<td align='left' class='tdNone'>$referido</td>";
+									echo "<td align='center' class='tdNone' style='vertical-align:middle; white-space: nowrap;'>N&ordm; PDV</td>";
+									echo "<td align='left' class='tdNone' style='vertical-align:middle;'>$referido</td>";
 								}elseif(is_numeric($referido) and $tabela_referido=='ordem_servico'){
-									echo "<td align='center' class='tdNone' style='white-space: nowrap;'>N&ordm; Ordem de Serviço</td>";
-									echo "<td align='left' class='tdNone'>$referido</td>";
+									echo "<td align='center' class='tdNone' style='vertical-align:middle; white-space: nowrap;'>N&ordm; Ordem de Serviço</td>";
+									echo "<td align='left' class='tdNone' style='vertical-align:middle;'>$referido</td>";
 								}elseif(is_numeric($referido) and $tabela_referido=='plano_assinatura'){
-									echo "<td align='center' class='tdNone' style='white-space: nowrap;'>N&ordm; Plano / Assinatura</td>";
-									echo "<td align='left' class='tdNone'>$referido</td>";
+									echo "<td align='center' class='tdNone' style='vertical-align:middle; white-space: nowrap;'>N&ordm; Plano / Assinatura</td>";
+									echo "<td align='left' class='tdNone' style='vertical-align:middle;'>$referido</td>";
 								}else{
 									echo "<td align='center' colspan='2' class='tdNone'><br></td>";
 								}
-								echo "<td align='center' style='border:none; font-size:20px; font-weight: bold; width:500px;'>R$ " . real($recebido) . "</td>";
+								echo "<td align='center' style='border:none; font-size:25px; font-weight: bold; width:500px;'>R$ " . real($recebido);
+                                if($descReal){
+                                    echo "<span style='display: inline-block;  background-color: white;  border: none;  font-size: 10px;  padding-left: 20px;'>VOCÊ ECONOMIZOU<br>";
+                                    echo "R$ ".real($descReal)."</span>";
+                                }
+                                echo "</td>";
 							echo "</tr>";
 							echo "<tr>";
 							echo "<td colspan='7' align='left'><span class='spanRecibo'>$status Sr.(s)</span><center style='font-weight:bold; font-variant:small-caps;'>";
@@ -142,6 +149,9 @@ function recibo($ID){
 								}else{
 								    echo $referido;
 								}
+                                if($descReal){
+                                    echo " com desconto de R$ ".real($descReal);
+                                }
 								echo "</td>";
 							echo "</tr>";
 							switch ($data[1]) {

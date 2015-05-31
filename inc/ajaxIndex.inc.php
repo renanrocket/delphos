@@ -8,7 +8,7 @@ include "../conecta.php" : $conexao = null;
 //fim
 
 extract($_POST);
-
+$valor = utf8_decode($valor);
 $sql = query("select * from cliente where (nome like '%$valor%' or razao_social like '%$valor%' or cnpj like '%$valor%') and status='1' limit 0,1");
 $linha = mysqli_num_rows($sql);
 

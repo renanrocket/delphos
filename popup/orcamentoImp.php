@@ -152,7 +152,7 @@ echo "
 						}
 						echo "
 							<tr>
-								<td class='$class1 $class3' colspan='2'>$id_item</td>
+								<td class='$class1 $class3' colspan='2'>$id_item<br>$descricao_item</td>
 								<td class='$class2 $class3'>$quantidade</td>
 								<td class='$class2 $class3'>R$ ".real($valor_produto)."</td>
 								<td class='$class2 $class3'>R$ ".real($itemTotal)."</td>
@@ -183,14 +183,40 @@ echo "
 							}
 						}
 					}
-					echo "
-					<tr>
-						<td class='tdNone'></td>
-						<td class='orcSta' align='right'>TOTAL</td>
-						<td class='orcMid'>$qtdItemTotal</td>
-						<td class='orcMid'>R$ ".real($totalSubTotal)."</td>
-						<td class='orcMid' style='font-weight:bold; font-size:19px;'>R$ ".real($totalItemTotal)."</td>
-					</tr>";
+                    if($descReal){
+                        echo "
+                        <tr>
+                            <td class='tdNone'></td>
+                            <td class='orcSta' align='right'>SUB TOTAL</td>
+                            <td class='orcMid'>$qtdItemTotal</td>
+                            <td class='orcMid'>R$ ".real($totalSubTotal)."</td>
+                            <td class='orcMid'>R$ ".real($totalItemTotal)."</td>
+                        </tr>
+                        <tr>
+                            <td class='tdNone'></td>
+                            <td class='orcSta' align='right'>DESCONTO</td>
+                            <td class='orcMid'></td>
+                            <td class='orcMid'>$descPor %</td>
+                            <td class='orcMid'>R$ ".real($descReal)."</td>
+                        </tr>
+                        <tr>
+                            <td class='tdNone'></td>
+                            <td class='orcSta' align='right'>TOTAL</td>
+                            <td class='orcMid'></td>
+                            <td class='orcMid'></td>
+                            <td class='orcMid' style='font-weight:bold; font-size:19px;'>R$ ".real($totalItemTotal-$descReal)."</td>
+                        </tr>";
+                    }else{
+                        echo "
+                        <tr>
+                            <td class='tdNone'></td>
+                            <td class='orcSta' align='right'>TOTAL</td>
+                            <td class='orcMid'>$qtdItemTotal</td>
+                            <td class='orcMid'>R$ ".real($totalSubTotal)."</td>
+                            <td class='orcMid' style='font-weight:bold; font-size:19px;'>R$ ".real($totalItemTotal)."</td>
+                        </tr>";
+                    }
+
 					$sql_conta = query("select id, forma_pagamento, parcelas from conta where tabela_referido='orcamento' and referido='".base64_decode($_GET["orcamento"])."'");
 					extract(mysqli_fetch_assoc($sql_conta));
 					$sql_conta_log = query("select tipo_pagamento, tipo_pagamento_sub from conta_itens where id_conta='$id'");

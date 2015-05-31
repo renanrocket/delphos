@@ -186,13 +186,14 @@ if($op=="novo" or $op=="editar"){
 					info($info);
 					orcamento($idOrcamento);
 				}else{
-					
+					$totalDescontoPor = real2($totalDescontoPor);
+                    $totalDescontoReal = real2($totalDescontoReal);
 					//independente dos dados confirmados ou não, o usuario não deseja cadastrar o cliente
 					//cadastrando orcamento
 					$instrucao = "insert into orcamento ";
-					$instrucao .= "(id_cliente, cliente, fone, observacoes, id_usuario, data_emissao) ";
+					$instrucao .= "(id_cliente, cliente, fone, descPor, descReal, observacoes, id_usuario, data_emissao) ";
 					$instrucao .= "values ";
-					$instrucao .= "('$idCliente','$contato','$telefoneC', '$observacoesO', '$idUsuario','".date('Y-m-d H:i:s')."');";
+					$instrucao .= "('$idCliente','$contato','$telefoneC', '$totalDescontoPor', '$totalDescontoReal', '$observacoesO', '$idUsuario','".date('Y-m-d H:i:s')."');";
 					
 					$sql = query($instrucao);
 					
@@ -208,19 +209,20 @@ if($op=="novo" or $op=="editar"){
 					
 					//cadastrando itens do orcamento
 					$instrucao = "insert into orcamento_itens ";
-					$instrucao .= "(id_orcamento, tabela_item, id_item, quantidade, valor_produto) ";
+					$instrucao .= "(id_orcamento, tabela_item, id_item, quantidade, valor_produto, descricao_item) ";
 					$instrucao .= "values ";
 					for($i=0, $valor = ""; $i<$qtdItem;$i++){
 						$i!=0 ? $instrucao.= ", ": false;
 						$subTotal[$i] = str_replace(",", ".", $subTotal[$i]);
 						//produto cadastrado
 						if(is_numeric($idItem[$i])){
-							$instrucao .= "('$idOrcamento', '$tabelaItem[$i]', '$idItem[$i]', '$quantidade[$i]', '$subTotal[$i]')";
+							$instrucao .= "('$idOrcamento', '$tabelaItem[$i]', '$idItem[$i]', '$quantidade[$i]', '$subTotal[$i]', '$descItem[$i]')";
 						}elseif(!is_numeric($idItem[$i])){
-							$instrucao .= "('$idOrcamento', '$tabelaItem[$i]', '$item[$i]', '$quantidade[$i]', '$subTotal[$i]')";
+							$instrucao .= "('$idOrcamento', '$tabelaItem[$i]', '$item[$i]', '$quantidade[$i]', '$subTotal[$i]', '$descItem[$i]')";
 						}
 						$valor += $quantidade[$i] * $subTotal[$i];
 					}
+                    $valor = $valor - $totalDescontoReal;
 					$sql = query($instrucao);
 					
 					
@@ -288,12 +290,13 @@ if($op=="novo" or $op=="editar"){
 	            
 				
 			}elseif($op=="editar" and !$validaToken){
-					
+                $totalDescontoPor = real2($totalDescontoPor);
+                $totalDescontoReal = real2($totalDescontoReal);
 				//independente dos dados confirmados ou não, o usuario não deseja cadastrar o cliente
 				//editar orcamento
 				$instrucao = "update orcamento set ";
-				$instrucao .= "id_cliente='$idCliente', cliente='$contato', fone='$telefoneC', observacoes='$observacoesO', ";
-				$instrucao .= "id_usuario='$idUsuario', data_emissao='".date('Y-m-d H:i:s')."' where id='$idOrcamento'";
+				$instrucao .= "id_cliente='$idCliente', cliente='$contato', fone='$telefoneC', observacoes='$observacoesO', descPor='$totalDescontoPor', ";
+				$instrucao .= "descReal='$totalDescontoReal', id_usuario='$idUsuario', data_emissao='".date('Y-m-d H:i:s')."' where id='$idOrcamento'";
 				
 				$sql = query($instrucao);
 				
@@ -310,19 +313,20 @@ if($op=="novo" or $op=="editar"){
 				$sql = query("delete from orcamento_itens where id_orcamento='$idOrcamento'");
 				//cadastrando itens do orcamento
 				$instrucao = "insert into orcamento_itens ";
-				$instrucao .= "(id_orcamento, tabela_item, id_item, quantidade, valor_produto) ";
+				$instrucao .= "(id_orcamento, tabela_item, id_item, quantidade, valor_produto, descricao_item) ";
 				$instrucao .= "values ";
 				for($i=0, $valor = ""; $i<$qtdItem;$i++){
 					$i!=0 ? $instrucao.= ", ": false;
 					$subTotal[$i] = str_replace(",", ".", $subTotal[$i]);
 					//produto cadastrado
 					if(is_numeric($idItem[$i])){
-						$instrucao .= "('$idOrcamento', '$tabelaItem[$i]', '$idItem[$i]', '$quantidade[$i]', '$subTotal[$i]')";
+						$instrucao .= "('$idOrcamento', '$tabelaItem[$i]', '$idItem[$i]', '$quantidade[$i]', '$subTotal[$i]', '$descItem[$i]')";
 					}elseif(!is_numeric($idItem[$i])){
-						$instrucao .= "('$idOrcamento', '$tabelaItem[$i]', '$item[$i]', '$quantidade[$i]', '$subTotal[$i]')";
+						$instrucao .= "('$idOrcamento', '$tabelaItem[$i]', '$item[$i]', '$quantidade[$i]', '$subTotal[$i]', '$descItem[$i]')";
 					}
 					$valor += $quantidade[$i] * $subTotal[$i];
 				}
+                $valor = $valor - $totalDescontoReal;
 				$sql = query($instrucao);
 				$info .= "Orçamento editado com sucesso.";
 				

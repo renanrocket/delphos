@@ -1,7 +1,5 @@
 <?php
 include "templates/upLogin.inc.php";
-//js para esta pagina em especifico
-echo "<script src='js/orcamentoNovoFiltro.js' type='text/javascript'></script>";
 
 extract($_POST);
 extract($_GET);
