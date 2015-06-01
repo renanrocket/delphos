@@ -89,14 +89,15 @@ $(function() {
 	function removeCampo() {
 		$(".removerCampo").unbind("click");
 		$(".removerCampo").bind("click", function() {
-			i = 0;
-			$(".itens tr.campoItem").each(function() {
-				i++;
-			});
-			if (i > 1) {
-				$(this).parent().parent().remove();
-				document.getElementById('qtdItem').value = parseInt(document.getElementById('qtdItem').value) - 1;
-			}
+
+			if (0 < parseInt($('#qtdItem').val())-1) {
+                $(this).parent().parent().next().remove();
+                $(this).parent().parent().remove();
+				$('#qtdItem').val(parseInt($('#qtdItem').val()) - 1);
+			}else{
+                alert("Você precisa ter pelo menos um item no orçamento.");
+            }
+
 		});
 	}
 
