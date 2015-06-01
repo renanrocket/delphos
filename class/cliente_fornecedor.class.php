@@ -185,7 +185,7 @@ class cliente_fornecedor{
 			$script .= "<div class='suggestionsBox' id='suggestions' style='display: none;'><span style='float:right;'><input type='button' id='deletar' value='X' onclick=\"lookupOff();\"></span>";
 			$script .= "<div class='suggestionList' id='autoSuggestionsList'></div></div>";
 			$script .= "</td>";
-			$script .= "<td colspan='1'><span style='white-space:nowrap;'>Telefone do Contato</span><br><input type='text' name='telefoneC' autocomplete='off' value='$this->fone1' ".mascara("Telefone", "14", "onBlur='cloneInput(this.value, \"telefone1\");'", null, null, 'clienteShow(this, "fone");')."></td>";
+			$script .= "<td colspan='1'><span style='white-space:nowrap;'>Telefone do Contato</span><br><input type='text' name='telefoneC' autocomplete='off' value='$this->fone1' ".mascara("Telefone", "15", "onBlur='cloneInput(this.value, \"telefone1\");'", null, null, 'clienteShow(this, "fone");')."></td>";
 			$script .= "</tr>";
 		}else{
 			$script .= "<input type='hidden' value='true' name='cadastrarCliente'>";
@@ -224,8 +224,8 @@ class cliente_fornecedor{
 		
 		
 		$script .= "<tr $itensForm3Style>";
-		$script .= "<td colspan='4'>Telefone 1<br><input type='text' name='telefone1' onBlur='cloneInput(this.value, \"telefoneC\");' value='$this->fone1' ".mascara("Telefone", "14")."></td>";
-		$script .= "<td colspan='1'>Telefone 2<br><input type='text' name='telefone2' value='$this->fone2' ".mascara("Telefone", "14")."></td>";
+		$script .= "<td colspan='4'>Telefone 1<br><input type='text' name='telefone1' onBlur='cloneInput(this.value, \"telefoneC\");' value='$this->fone1' ".mascara("Telefone", "15")."></td>";
+		$script .= "<td colspan='1'>Telefone 2<br><input type='text' name='telefone2' value='$this->fone2' ".mascara("Telefone", "15")."></td>";
 		!strstr($this->data_nascimento, "/") ? $this->data_nascimento = formataData($this->data_nascimento) : false;
 		if($this->tipo=="j"){
 			$script .= "<td colspan='1'><span id='data'>Data deFuncação</span><br>".inputData("formulario", "data", false, $this->data_nascimento)."</td>";			

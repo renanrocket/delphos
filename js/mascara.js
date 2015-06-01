@@ -27,11 +27,11 @@ function Integer(v) {
 	return v.replace(/\D/g, "");
 }
 
-/*Fun��o que padroniza telefone (11) 4184.1241*/
+/*Fun��o que padroniza telefone (11) 94184.1241*/
 function Telefone(v) {
 	v = v.replace(/\D/g, "");
 	v = v.replace(/^(\d\d)(\d)/g, "($1) $2");
-	v = v.replace(/(\d{4})(\d)/, "$1.$2");
+	v = v.replace(/(\d{5})(\d)/, "$1.$2");
 	return v;
 }
 

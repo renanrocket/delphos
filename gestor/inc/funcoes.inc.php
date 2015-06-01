@@ -234,7 +234,7 @@ function mascara($mascara, $tamanho = null, $codExtra = null , $onKeyDown = null
 	$cod = "onKeyDown='Mascara(this,$mascara); $onKeyDown' onKeyPress='Mascara(this,$mascara); $onKeyPress' onKeyUp='Mascara(this,$mascara); $onKeyUp'";
 	switch ($mascara) {
 		case 'Telefone':
-			$cod .= "placeholder='(00) 0000.0000'";
+			$cod .= "placeholder='(00) 00000.0000'";
 			break;
 		case 'Cpf':
 			$cod .= "placeholder='000.000.000-00'";

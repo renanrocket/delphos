@@ -127,9 +127,9 @@ class empresa{
 		echo "<div class='column'>";
 		echo inputECC('estados', 'cidades', 'cep', $this->estado, $this->cidade, $this->cep, 'label');
 		
-		echo "<label for='fone1'>Telefone 1</label><input type='text' name='fone1' value='$this->fone1' " . mascara("Telefone", "14") . ">";
-		echo "<label for='fone2'>Telefone 2</label><input type='text' name='fone2' value='$this->fone2' " . mascara("Telefone", "14") . ">";
-		echo "<label for='fone3'>Telefone 3</label><input type='text' name='fone3' value='$this->fone3' " . mascara("Telefone", "14") . ">";
+		echo "<label for='fone1'>Telefone 1</label><input type='text' name='fone1' value='$this->fone1' " . mascara("Telefone", "15") . ">";
+		echo "<label for='fone2'>Telefone 2</label><input type='text' name='fone2' value='$this->fone2' " . mascara("Telefone", "15") . ">";
+		echo "<label for='fone3'>Telefone 3</label><input type='text' name='fone3' value='$this->fone3' " . mascara("Telefone", "15") . ">";
 		echo "</div>";
 		
 		echo "<div class='column'>";

@@ -242,7 +242,7 @@
 						echo "<label for='email'>E-mail</label><br>";
   						echo "<input type='text' name='email' placeholder='jonathan@gmail.com'><br>";
 						echo "<label for='tel'>Telefone</label><br>";
-  						echo "<input type='text' name='tel' placeholder='(88) 1234.1234' ".mascara("Telefone", 14)."><br>";
+  						echo "<input type='text' name='tel' placeholder='(88) 91234.1234' ".mascara("Telefone", 15)."><br>";
   						echo "<input type='hidden' name='produto' value='$id $nome'><br>";
 						echo "<input type='submit' value='Enviar'>";
 					echo "</form>";

@@ -101,7 +101,7 @@ if(!isset($prioridade)){
 			<label for='email'>Confirme seu e-mail</label>
 			<input id='email' type='text' class='email' value='<?php echo $email ?>'>
 			<label for='telefone'>Confirme seu Telefone</label>
-			<input type='text' class='email' value='<?php echo $telefone ?>' <?php echo mascara('Telefone', 14) ?>>
+			<input type='text' class='email' value='<?php echo $telefone ?>' <?php echo mascara('Telefone', 15) ?>>
 			<?php
 				
 				include("plugins/simple-php-captcha-master/simple-php-captcha.php");

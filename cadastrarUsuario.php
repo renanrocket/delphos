@@ -78,8 +78,8 @@ function cadastroUsuario($ID = null) {
 	echo "<tr>";
 	echo "<td colspan='2'>E-mail<br><input type='text' name='email' size='50' value='$email' style='text-transform:none;'></td>";
 	echo "<td colspan='1'>Data de Nascimento<br>" . inputData("formularioUsuario", "nascimento", NULL, $nascimento) . "</td>";
-	echo "<td colspan='2'>Telefone 1<br><input type='text' name='telefone1' maxlength='14' value='$telefone1' " . mascara("Telefone", "14") . "></td>";
-	echo "<td colpsan='1'>Telefone 2<br><input type='text' name='telefone2' maxlength='14' value='$telefone2' " . mascara("Telefone", "14") . "></td>";
+	echo "<td colspan='2'>Telefone 1<br><input type='text' name='telefone1' maxlength='14' value='$telefone1' " . mascara("Telefone", "15") . "></td>";
+	echo "<td colpsan='1'>Telefone 2<br><input type='text' name='telefone2' maxlength='14' value='$telefone2' " . mascara("Telefone", "15") . "></td>";
 	echo "</tr>";
 	
 	echo "<tr>";

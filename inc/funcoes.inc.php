@@ -804,9 +804,9 @@ function empresa($op = "novo", $id= null, $imgsrc = null, $razao_social = null, 
 	echo "<tr>";
 
 	echo "<tr>";
-	echo "<td>Telefone 1<br><input type='text' name='fone1' value='$fone1' " . mascara("Telefone", "14") . "></td>";
-	echo "<td>Telefone 2<br><input type='text' name='fone2' value='$fone2' " . mascara("Telefone", "14") . "></td>";
-	echo "<td>Telefone 3<br><input type='text' name='fone3' value='$fone3' " . mascara("Telefone", "14") . "></td>";
+	echo "<td>Telefone 1<br><input type='text' name='fone1' value='$fone1' " . mascara("Telefone", "15") . "></td>";
+	echo "<td>Telefone 2<br><input type='text' name='fone2' value='$fone2' " . mascara("Telefone", "15") . "></td>";
+	echo "<td>Telefone 3<br><input type='text' name='fone3' value='$fone3' " . mascara("Telefone", "15") . "></td>";
 	echo "<tr>";
 
 	echo "<tr>";
@@ -859,7 +859,7 @@ function mascara($mascara, $tamanho = null, $codExtra = null , $onKeyDown = null
 	$cod = "onKeyDown='Mascara(this,$mascara); $onKeyDown' onKeyPress='Mascara(this,$mascara); $onKeyPress' onKeyUp='Mascara(this,$mascara); $onKeyUp'";
 	switch ($mascara) {
 		case 'Telefone':
-			$cod .= "placeholder='(00) 0000.0000'";
+			$cod .= "placeholder='(00) 00000.0000'";
 			break;
 		case 'Cpf':
 			$cod .= "placeholder='000.000.000-00'";
