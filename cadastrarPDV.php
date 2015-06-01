@@ -76,7 +76,27 @@ if(isset($_POST["op"]) or isset($_GET["op"])){
 			$instrucao = "insert into pdv (nome, id_empresa) values ('$pdvNome', '$empresa')";
 			$sql = query($instrucao);
 			$idPdv = mysqli_insert_id($conexao);
-			
+
+            $sql = query("select * from administrativo where taxonomia='happyhour' and valor='1'");
+            if(mysqli_num_rows($sql)>0){
+                //happyhour
+                $sql = query("select hp_hora_inicio, hp_hora_final, hp_dias from produto where id='$idProduto'");
+                extract(mysqli_fetch_assoc($sql));
+                if($hp_hora_inicio and $hp_hora_final and $hp_dias){
+                    $hp_dias = explode(',', $hp_dias);
+                    $hpI = explode(':', $hp_hora_inicio);
+                    $hpF = explode(':', $hp_hora_final);
+                    if(in_array(date('w'), $hp_dias)){
+                        date_default_timezone_set('America/Fortaleza');
+                        if(mktime($hpI[0],$hpI[1],0,0,0,0)<=mktime(date('H'),date('i'),0,0,0,0) and
+                            mktime(date('H'),date('i'),0,0,0,0)<=mktime($hpF[0],$hpF[1],0,0,0,0)){
+                            //happyhour ativo então pegar o preço do desconto.
+                            $preco = precoProduto($idProduto, false, true);
+                        }
+                    }
+                }
+            }
+
 			//instrucao do pdv_item
 			$instrucao = "insert into pdv_itens (id_pdv, id_produto, quantidade, preco, observacoes, data, id_usuario) ";
 			$instrucao .= "values ('$idPdv', '$idProduto', '$quantidade', '$preco', '$observacoes', '".date('Y-m-d H:i:s')."', '".getIdCookieLogin($_COOKIE["login"])."')";
@@ -127,6 +147,26 @@ if(isset($_POST["op"]) or isset($_GET["op"])){
 			//instrucao do pdv
 			$instrucao = "update pdv set nome='$pdvNome', id_empresa='$empresa' where id='$idPdv'";
 			$sql = query($instrucao);
+
+            $sql = query("select * from administrativo where taxonomia='happyhour' and valor='1'");
+            if(mysqli_num_rows($sql)>0){
+                //happyhour
+                $sql = query("select hp_hora_inicio, hp_hora_final, hp_dias from produto where id='$idProduto'");
+                extract(mysqli_fetch_assoc($sql));
+                if($hp_hora_inicio and $hp_hora_final and $hp_dias){
+                    $hp_dias = explode(',', $hp_dias);
+                    $hpI = explode(':', $hp_hora_inicio);
+                    $hpF = explode(':', $hp_hora_final);
+                    if(in_array(date('w'), $hp_dias)){
+                        date_default_timezone_set('America/Fortaleza');
+                        if(mktime($hpI[0],$hpI[1],0,0,0,0)<=mktime(date('H'),date('i'),0,0,0,0) and
+                            mktime(date('H'),date('i'),0,0,0,0)<=mktime($hpF[0],$hpF[1],0,0,0,0)){
+                            //happyhour ativo então pegar o preço do desconto.
+                            $preco = precoProduto($idProduto, false, true);
+                        }
+                    }
+                }
+            }
 			
 			//instrucao do pdv_item
 			$instrucao = "insert into pdv_itens (id_pdv, id_produto, quantidade, preco, observacoes, data, id_usuario) ";

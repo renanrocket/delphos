@@ -65,6 +65,63 @@ $(function() {
 	});
 });
 
+function calcularhora(){
+    var horaInicial = $("input[name='hp_hora_inicial'").val();
+    var horaFinal = $("input[name='hp_hora_final'").val();
+    // Tratamento se a hora inicial é menor que a final
+    /*
+    if( ! isHoraInicialMenorHoraFinal(horaInicial, horaFinal) ){
+        aux = horaFinal;
+        horaFinal = horaInicial;
+        horaInicial = aux;
+    }
+    */
+
+    hIni = horaInicial.split(':');
+    hFim = horaFinal.split(':');
+
+    horasTotal = parseInt(hFim[0], 10) - parseInt(hIni[0], 10);
+    minutosTotal = parseInt(hFim[1], 10) - parseInt(hIni[1], 10);
+
+    if(minutosTotal > 0){
+        minutosTotal += 60;
+        horasTotal -= 1;
+    }
+
+    horaFinal = completaZeroEsquerda(horasTotal) + ":" + completaZeroEsquerda(minutosTotal);
+    if(horasTotal<0 || (horasTotal==0 && minutosTotal<0)){
+        $("input[name='hp_hora_inicial'").attr('class', 'avisoInput');
+        $("input[name='hp_hora_final'").attr('class', 'avisoInput');
+        alert("Hora final do happy hour menor do que a hora inicial do happy hour!");
+    }else{
+        $("input[name='hp_hora_inicial'").attr('class', '');
+        $("input[name='hp_hora_final'").attr('class', '');
+    }
+}
+
+function isHoraInicialMenorHoraFinal(horaInicial, horaFinal){
+    horaIni = horaInicial.split(':');
+    horaFim = horaFinal.split(':');
+
+    // Verifica as horas. Se forem diferentes, é só ver se a inicial
+    // é menor que a final.
+    hIni = parseInt(horaIni[0], 10);
+    hFim = parseInt(horaFim[0], 10);
+    if(hIni != hFim)
+        return hIni < hFim;
+
+    // Se as horas são iguais, verifica os minutos então.
+    mIni = parseInt(horaIni[1], 10);
+    mFim = parseInt(horaFim[1], 10);
+    if(mIni != mFim)
+        return mIni < mFim;
+}
+function completaZeroEsquerda(num){
+    if(num.toString().length<2){
+        num = '0'+num;
+    }
+    return num;
+}
 function mudaTributacao(input){
 	id = input.id.split("_");
 	if($("#tipoValor_"+id[1]).val()=="0"){

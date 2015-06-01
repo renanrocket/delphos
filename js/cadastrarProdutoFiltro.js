@@ -98,7 +98,39 @@ function filtro(){
 	}else{
 		$("input[name='descMax']").attr("class", "preco totalValor");
 	}
-	
+
+    var horaInicial = $("input[name='hp_hora_inicial'").val();
+    var horaFinal = $("input[name='hp_hora_final'").val();
+    // Tratamento se a hora inicial é menor que a final
+    /*
+     if( ! isHoraInicialMenorHoraFinal(horaInicial, horaFinal) ){
+     aux = horaFinal;
+     horaFinal = horaInicial;
+     horaInicial = aux;
+     }
+     */
+
+    hIni = horaInicial.split(':');
+    hFim = horaFinal.split(':');
+
+    horasTotal = parseInt(hFim[0], 10) - parseInt(hIni[0], 10);
+    minutosTotal = parseInt(hFim[1], 10) - parseInt(hIni[1], 10);
+
+    if(minutosTotal > 0){
+        minutosTotal += 60;
+        horasTotal -= 1;
+    }
+
+    horaFinal = completaZeroEsquerda(horasTotal) + ":" + completaZeroEsquerda(minutosTotal);
+    if(horasTotal<0 || (horasTotal==0 && minutosTotal<0)){
+        $("input[name='hp_hora_inicial'").attr('class', 'avisoInput');
+        $("input[name='hp_hora_final'").attr('class', 'avisoInput');
+        alerta += "Hora final do happy hour menor do que a hora inicial do happy hour!\n";
+        valida = false;
+    }else{
+        $("input[name='hp_hora_inicial'").attr('class', '');
+        $("input[name='hp_hora_final'").attr('class', '');
+    }
 		
 	if (valida==true){
 		return true;

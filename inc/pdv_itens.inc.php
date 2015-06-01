@@ -82,14 +82,35 @@
 						for($i=0, $tooltip=null; $i<mysqli_num_rows($sql); $i++){
 							extract(mysqli_fetch_assoc($sql));
 							if(file_exists("../".$miniatura)){
-								$tooltip .= "<img ".pop("imagem.php?id=$id_produto&atributo=produto_imagem&referencia=id_produto", 600, 600)." src=\"$miniatura\">";	
+								$tooltip .= "<img ".pop("imagem.php?id=$result->idProduto&atributo=produto_imagem&referencia=id_produto", 600, 600)." src=\"$miniatura\">";
 							}
 						}
-						
+                        $precoPC = "<span id='p1'>R$ ".real($preco1)."</span>";
+                        $precoMB = "R$ ".real($preco1);
+                        $sqlHP = query("select * from administrativo where taxonomia='happyhour' and valor='1'");
+                        if(mysqli_num_rows($sqlHP)>0){
+                            //happyhour
+                            $sqlHP = query("select hp_hora_inicio, hp_hora_final, hp_dias from produto where id='$result->idProduto'");
+                            extract(mysqli_fetch_assoc($sqlHP));
+                            if($hp_hora_inicio and $hp_hora_final and $hp_dias){
+                                $hp_dias = explode(',', $hp_dias);
+                                $hpI = explode(':', $hp_hora_inicio);
+                                $hpF = explode(':', $hp_hora_final);
+                                if(in_array(date('w'), $hp_dias)){
+                                    date_default_timezone_set('America/Fortaleza');
+                                    if(mktime($hpI[0],$hpI[1],0,0,0,0)<=mktime(date('H'),date('i'),0,0,0,0) and
+                                        mktime(date('H'),date('i'),0,0,0,0)<=mktime($hpF[0],$hpF[1],0,0,0,0)){
+                                        //happyhour ativo então pegar o preço do desconto.
+                                        $precoPC ="<span id='p1'>R$ ".real(precoProduto($result->idProduto, false, true))."</span><br>";
+                                        $precoPC.= "Em Happy Hour <span style='text-decoration:line-through; font-size:13px;'>R$ ".real(precoProduto($result->idProduto, true))."</span> ";
 
+                                    }
+                                }
+                            }
+                        }
 						if($op=="mobile"){
 							$js = "onClick=\"preencherMobile('$nome','$cod_barra');\"";
-							echo "<label $js>$nome R$ ".real($preco1)."</label>";
+							echo "<label $js>$nome $precoMB</label>";
 						}else{
 							if($li=="li1"){
 								$li= "li2";
@@ -101,7 +122,7 @@
 		         			echo "<table class='listaItensOrcamento'>";
 		         			echo "<tr>";
 		         			echo "<td rowspan='2' class='nomeLista'>$tooltip<span $js>$nome</span></td>";
-		         			echo "<td class='precoLista' align='right'><span id='p1'>R$ ".real($preco1)."</span></td>";
+		         			echo "<td class='precoLista' align='right'>$precoPC</td>";
 		         			echo "</tr>";
 		         			if($contabilizar_estoque){
 								echo "<tr>";
