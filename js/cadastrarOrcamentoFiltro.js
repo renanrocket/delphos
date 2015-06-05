@@ -1,4 +1,4 @@
-// JavaScript Document
+﻿// JavaScript Document
 //funcao para corrigir problema de voltar historico navegador e a quantidade item ser diferente de 1
 
 window.onload = function() {
@@ -316,7 +316,7 @@ function filtroOrcamento() {
 				} else {
 					$('#item_' + i).attr("class", "");
 				}
-				if (parseInt($('#quantidade_' + i).val()) == 0) {
+				if (parseInt($('#quantidade_' + i).val()) < 0) {
 					if (alerta.indexOf("Existe um campo de item nao preenchido.\n") < 0) {
 						alerta += "Existe um campo de item nao preenchido.\n";
 					}

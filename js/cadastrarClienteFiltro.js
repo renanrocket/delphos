@@ -61,10 +61,11 @@ function clienteShow(stringCliente, tipoBusca) {
 
 function preencherCliente(id, tipo, nome, razao_social, cpf_cnpj, rg_ie, data_nascimento, email, fone1, fone2, endereco, numero, bairro, cidade, CIDADE, estado, cep, ref) {
 
-    $('input[name$="nome"]').val(nome);
-    $('input[name$="contato"]').val(nome);
-    $('input[name$="telefoneC"]').val(fone1);
+    $('input[name="nome"]').val(nome);
+    $('input[name="contato"]').val(nome);
+    $('input[name="telefoneC"]').val(fone1);
     if(id){
+
 	//chamada da funcao para setar o tipo de pessoa no orcamento
 	tipoPessoaDoc(tipo);
 
@@ -81,22 +82,21 @@ function preencherCliente(id, tipo, nome, razao_social, cpf_cnpj, rg_ie, data_na
 		$("#tipo_pessoa").html(script);	
 	}
 
-
-	
-	$('input[name$="id_cliente_fornecedor"]').val(id);
-	$('input[name$="doc1"]').val(cpf_cnpj);
-	$('input[name$="doc2"]').val(rg_ie);
-	$('input[name$="data"]').val(data_nascimento);
-	$('input[name$="email"]').val(email);
-	$('input[name$="telefone1"]').val(fone1);
-	$('input[name$="telefone2"]').val(fone2);
+    $('input[name="nome"]').val(nome);
+	$('input[name="id_cliente_fornecedor"]').val(id);
+	$('input[name="doc1"]').val(cpf_cnpj);
+	$('input[name="doc2"]').val(rg_ie);
+	$('input[name="data"]').val(data_nascimento);
+	$('input[name="email"]').val(email);
+	$('input[name="telefone1"]').val(fone1);
+	$('input[name="telefone2"]').val(fone2);
 	$('#endereco').html("Endereço<br><textarea name=\"endereco\" style=\"height:90%;\">" + endereco + "</textarea>");
-	$('input[name$="numero"]').val(numero);
-	$('input[name$="bairro"]').val(bairro);
+	$('input[name="numero"]').val(numero);
+	$('input[name="bairro"]').val(bairro);
 	$('#tdCidades').html("Cidade<br><select name='cidade' id='cidades'><option value='" + cidade + "'>" + CIDADE + "</option></select>");
 	document.getElementById('estados').options[estado].selected = "yes";
-	$('input[name$="cep"]').val(cep);
-	$('input[name$="referencia"]').val(ref);
+	$('input[name="cep"]').val(cep);
+	$('input[name="referencia"]').val(ref);
 
 
 	if (id == "") {
