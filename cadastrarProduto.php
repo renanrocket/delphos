@@ -97,17 +97,6 @@ function produto($ID = null) {
     echo "</select>";
     echo "</span>";
     echo "</td>";
-    /*
-    echo "<td>Produto rastreado por NS<a href='javascript:void(0)' ".pop("numeroSerial.php")." title='Informa&ccedil;&otilde;es N&uacute;mero Serial'><img src='img/info.png' class='imgHelp'></a><br>";
-    echo "<select name='sn'>";
-    if($sn==1){
-        echo "<option value='false'>Não</option>";
-        echo "<option value='true' selected='yes'>Sim</option>";
-    }else{
-        echo "<option value='false' selected='yes'>Não</option>";
-        echo "<option value='true'>Sim</option>";
-    }
-    echo "</select></td>";*/
     echo "</tr>";
 
     echo "<tr>";
@@ -159,6 +148,7 @@ function produto($ID = null) {
     echo "<td>Quantidade Mínima em estoque".ajudaTool($msg)."<br><input type='text' name='qtd_minima' $class value='$qtd_minima' ".mascara("Valor2")."></td>";
     echo "<td>Quantidade atual em estoque<br><input type='text' name='qtd_estoque' $class value='$qtd_estoque' ".mascara("Valor2")."></td>";
     echo "</tr>";
+
 
     //tributação e tributação
     echo "<tr>";

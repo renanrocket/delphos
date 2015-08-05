@@ -185,6 +185,7 @@ class cliente_fornecedor{
 			$script .= "<div class='suggestionsBox' id='suggestions' style='display: none;'><span style='float:right;'><input type='button' id='deletar' value='X' onclick=\"lookupOff();\"></span>";
 			$script .= "<div class='suggestionList' id='autoSuggestionsList'></div></div>";
 			$script .= "</td>";
+            //$script .= "<td colspan='1'><span style='white-space:nowrap;'>Telefone do Contato</span><br><input type='text' name='telefoneC' autocomplete='off' value='$this->fone1' ".mascara("Telefone", "15", null, null, null, 'clienteShow(this, "fone"); cloneInput(this.value, \"telefone1\");')."></td>";
 			$script .= "<td colspan='1'><span style='white-space:nowrap;'>Telefone do Contato</span><br><input type='text' name='telefoneC' autocomplete='off' value='$this->fone1' ".mascara("Telefone", "15", "onBlur='cloneInput(this.value, \"telefone1\");'", null, null, 'clienteShow(this, "fone");')."></td>";
 			$script .= "</tr>";
 		}else{

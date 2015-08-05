@@ -53,8 +53,10 @@ function clienteShow(stringCliente, tipoBusca) {
 		}, function(data) {
 			if (data.length > 0) {
 				$('#autoSuggestionsList').html(data);
-				setTimeout("$('#suggestions').hide();", 10000);
-			}
+				//setTimeout("$('#suggestions').hide();", 10000);
+			}else{
+                $('#suggestions').hide();
+            }
 		});
 	}
 }

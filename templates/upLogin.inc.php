@@ -619,7 +619,7 @@ if (mysqli_num_rows($sql) > 0) {
 		echo "</li>";
 		echo "</ul>";
 		echo "</div>";
-		
+
 	?>
 
 <script type='text/javascript' src='plugins/TooltipMenu/js/cbpTooltipMenu.min.js'></script> <!-- menu responsivo (existe a outra parte no css)-->
