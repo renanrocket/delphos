@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9660e888-88ae-4467-a57e-c98a2d45ae72" name="Default" comment="" />
+    <ignored path="delphos.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="delphos" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="funcoes.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/funcoes.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.8703704" vertical-offset="38316" max-vertical-offset="74086">
+              <caret line="2263" column="12" selection-start-line="2263" selection-start-column="12" selection-end-line="2264" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cadastrarProduto.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cadastrarProduto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.39449543" vertical-offset="7537" max-vertical-offset="9486">
+              <caret line="456" column="12" selection-start-line="456" selection-start-column="12" selection-end-line="456" selection-end-column="12" />
+              <folding>
+                <marker date="1439365433042" expanded="false" signature="364:375" placeholder="..." />
+                <marker date="1439365433042" expanded="true" signature="818:854" placeholder="select * fro..produto..." />
+                <marker date="1439365433042" expanded="false" signature="2421:2433" placeholder="..." />
+                <marker date="1439365433042" expanded="false" signature="2668:2680" placeholder="..." />
+                <marker date="1439365433042" expanded="true" signature="3994:4082" placeholder="select id_ca..sub_categoria..." />
+                <marker date="1439365433042" expanded="false" signature="4758:4779" placeholder="..." />
+                <marker date="1439365433042" expanded="true" signature="7350:7405" placeholder="select * fro..produto_tributacao..." />
+                <marker date="1439365433042" expanded="true" signature="11582:11642" placeholder="select valor..administrativo..." />
+                <marker date="1439365433042" expanded="true" signature="11867:12032" placeholder="..." />
+                <marker date="1439365433042" expanded="true" signature="11880:12020" placeholder="{...}" />
+                <marker date="1439365433042" expanded="false" signature="12149:12171" placeholder="..." />
+                <marker date="1439365433042" expanded="true" signature="13885:13964" placeholder="select * fro..administrativo..." />
+                <marker date="1439365433042" expanded="true" signature="14334:14389" placeholder="select * fro..produto_subestoque..." />
+                <marker date="1439365433042" expanded="true" signature="15538:15552" placeholder="..." />
+                <marker date="1439365433042" expanded="true" signature="15567:15579" placeholder="..." />
+                <marker date="1439365433042" expanded="true" signature="15995:16046" placeholder="select * fro..produto_imagem..." />
+                <marker date="1439365433042" expanded="true" signature="16140:16169" placeholder="..." />
+                <marker date="1439365433042" expanded="true" signature="18014:18057" placeholder="select nome ..produto..." />
+                <marker date="1439365433042" expanded="true" signature="18193:18246" placeholder="select nome ..produto..." />
+                <marker date="1439365433042" expanded="true" signature="18408:18465" placeholder="select nome ..produto..." />
+                <marker date="1439365433042" expanded="true" signature="18603:18670" placeholder="select nome ..produto..." />
+                <marker date="1439365433042" expanded="true" signature="18892:18911" placeholder="insert into ..." />
+                <marker date="1439365433042" expanded="true" signature="19687:19717" placeholder="insert into ..." />
+                <marker date="1439365433042" expanded="true" signature="20188:20254" placeholder="delete from ..." />
+                <marker date="1439365433042" expanded="true" signature="20886:20904" placeholder="update produ..." />
+                <marker date="1439365433042" expanded="true" signature="21598:21651" placeholder="delete from ..." />
+                <marker date="1439365433042" expanded="true" signature="21671:21701" placeholder="insert into ..." />
+                <marker date="1439365433042" expanded="true" signature="22717:22761" placeholder="update produ..." />
+                <marker date="1439365433042" expanded="true" signature="22925:22969" placeholder="update produ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pdvFiltro.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/pdvFiltro.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+              <caret line="22" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pdv_itens.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/pdv_itens.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.230769" vertical-offset="1683" max-vertical-offset="2686">
+              <caret line="107" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="152" selection-end-column="2" />
+              <folding>
+                <marker date="1433134417000" expanded="true" signature="759:827" placeholder="select conec..cliente..." />
+                <marker date="1433134417000" expanded="true" signature="1521:1556" placeholder="SELECT id as..produto..." />
+                <marker date="1433134417000" expanded="true" signature="2512:2543" placeholder="select * fro..produto..." />
+                <marker date="1433134417000" expanded="true" signature="2649:2695" placeholder="select * fro..produto_imagem..." />
+                <marker date="1433134417000" expanded="true" signature="3207:3277" placeholder="select * fro..administrativo..." />
+                <marker date="1433134417000" expanded="true" signature="3420:3508" placeholder="select hp_ho..produto..." />
+                <marker date="1433134417000" expanded="false" signature="4545:4590" placeholder="..." />
+                <marker date="1433134417000" expanded="true" signature="5949:5997" placeholder="update pdv s..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajaxProduto.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/ajaxProduto.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-38.576923" vertical-offset="561" max-vertical-offset="2142">
+              <caret line="92" column="69" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
+              <folding>
+                <marker date="1439364968321" expanded="true" signature="805:873" placeholder="select conec..cliente..." />
+                <marker date="1439364968321" expanded="true" signature="1522:1557" placeholder="SELECT id as..produto..." />
+                <marker date="1439364968321" expanded="true" signature="2627:2658" placeholder="select * fro..produto..." />
+                <marker date="1439364968321" expanded="true" signature="2800:2846" placeholder="select * fro..produto_imagem..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cadastrarProdutoFormulario.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/cadastrarProdutoFormulario.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="6171">
+              <caret line="111" column="35" selection-start-line="111" selection-start-column="35" selection-end-line="111" selection-end-column="35" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cadastrarProdutoFiltro.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/cadastrarProdutoFiltro.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.678571" vertical-offset="0" max-vertical-offset="2516">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Master" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/inc/ajaxProduto.inc.php" />
+        <option value="$PROJECT_DIR$/js/cadastrarProdutoFormulario.js" />
+        <option value="$PROJECT_DIR$/cadastrarProduto.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.0.1" name="localhost" use_path_mappings="true" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="E:\www\delphos" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Blade files</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="delphos">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="delphos">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="js">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="delphos">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="individual">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="delphos">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="inc">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="recentsLimit" value="5" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.splitter.main.proportions" value="0.29583332" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="commit&#9;ACTION&#9;CheckinProject" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <envs />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Rocket\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9660e888-88ae-4467-a57e-c98a2d45ae72" name="Default" comment="" />
+      <created>1432955167533</created>
+      <option name="number" value="Default" />
+      <updated>1432955167533</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Modificações do final do Mês">
+      <created>1433013259938</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1433013259938</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Modificações do final do Mês">
+      <created>1433022820230</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1433022820230</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Modificações do final do Mês">
+      <created>1433134548918</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1433134548919</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Modificações do final do Mês">
+      <created>1433135651360</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1433135651360</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Modificações do final do Mês">
+      <created>1433138284334</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1433138284334</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Correção de erro no js cadsatrarOrcamento.js">
+      <created>1433544130922</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1433544130922</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Correção de erro no js telefone cadsatrarOrcamento.js">
+      <created>1438735997192</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1438735997192</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2591508" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21104388" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Modificações do final do Mês" />
+    <MESSAGE value="Correção de erro no js cadsatrarOrcamento.js" />
+    <MESSAGE value="Correção de erro no js telefone cadsatrarOrcamento.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção de erro no js telefone cadsatrarOrcamento.js" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/inserirChave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="7497">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/funcoes.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="21163" max-vertical-offset="78931">
+          <caret line="1255" column="13" selection-start-line="1255" selection-start-column="0" selection-end-line="1255" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8840">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6309314" vertical-offset="2856" max-vertical-offset="3944">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029209621" vertical-offset="85" max-vertical-offset="3264">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inserirChave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="7497">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/ajaxImovelTag.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.76627713" vertical-offset="459" max-vertical-offset="1360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/ajaxPdvNome.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.78327644" vertical-offset="459" max-vertical-offset="1156">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/ajaxPesquisaContaPag.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/cadastrarMatricula.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0443686" vertical-offset="612" max-vertical-offset="1241">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastrarPDV2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="2703">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/orcamento_itens.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="3536">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popup/orcamentoImp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2848" max-vertical-offset="6290">
+          <caret line="208" column="26" selection-start-line="208" selection-start-column="26" selection-end-line="208" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/contaAutoCompletar.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1700">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popup/recibo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15232974" vertical-offset="0" max-vertical-offset="3774">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestor/inc/funcoes.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53763443" vertical-offset="3812" max-vertical-offset="4556">
+          <caret line="236" column="40" selection-start-line="236" selection-start-column="40" selection-end-line="236" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/empresa.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4919355" vertical-offset="2061" max-vertical-offset="2975">
+          <caret line="132" column="22" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastrarUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40053764" vertical-offset="1228" max-vertical-offset="13209">
+          <caret line="81" column="137" selection-start-line="81" selection-start-column="137" selection-end-line="81" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrativoSuporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24193548" vertical-offset="1627" max-vertical-offset="2669">
+          <caret line="101" column="85" selection-start-line="101" selection-start-column="85" selection-end-line="101" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/orcamentoNovo2Filtros.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45698926" vertical-offset="765" max-vertical-offset="7429">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/QuotesRotator/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10921501" vertical-offset="4016" max-vertical-offset="5083">
+          <caret line="240" column="55" selection-start-line="240" selection-start-column="55" selection-end-line="240" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="510">
+          <caret line="12" column="73" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cadastrarOrcamentoFiltro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16753927" vertical-offset="5191" max-vertical-offset="5916">
+          <caret line="312" column="21" selection-start-line="312" selection-start-column="21" selection-end-line="312" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/ajaxIndex.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2559415" vertical-offset="30" max-vertical-offset="612">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/upLogin.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69104207" vertical-offset="1509" max-vertical-offset="10846">
+          <caret line="111" column="19" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/grafico.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.50714284" vertical-offset="641" max-vertical-offset="2805">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.575" vertical-offset="936" max-vertical-offset="1496">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mascara.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5474">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../clubkids/app.config/CKsistema.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.087030716" vertical-offset="0" max-vertical-offset="586">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/orcamento_clientes.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.045704" vertical-offset="1340" max-vertical-offset="2142">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastrarOrcamento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.009141" vertical-offset="2193" max-vertical-offset="11611">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/cadastrarOrcamentoPrecoServico.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39285713" vertical-offset="375" max-vertical-offset="935">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/cliente_fornecedor.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3026">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/cliente_fornecedorDoc1.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0642858" vertical-offset="596" max-vertical-offset="1156">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/cliente_fornecedor.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3007" max-vertical-offset="7667">
+          <caret line="187" column="252" selection-start-line="187" selection-start-column="248" selection-end-line="187" selection-end-column="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.config/chat.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.config/driver.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.config/gestor.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/individual/rocket.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/individual/rocket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14629948" vertical-offset="0" max-vertical-offset="581">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cadastrarClienteFiltro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028619528" vertical-offset="85" max-vertical-offset="5338">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/produto_nome.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.43889844" vertical-offset="255" max-vertical-offset="918">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1432694079000" expanded="true" signature="-1:-1" placeholder="select conec..cliente..." />
+            <marker date="1432694079000" expanded="true" signature="-1:-1" placeholder="select * fro..produto..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/movimento_produtos.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.065141" vertical-offset="1173" max-vertical-offset="1955">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1432694079000" expanded="true" signature="-1:-1" placeholder="select conec..cliente..." />
+            <marker date="1432694079000" expanded="true" signature="-1:-1" placeholder="SELECT id, n..produto..." />
+            <marker date="1432694079000" expanded="true" signature="-1:-1" placeholder="select * fro..produto_imagem..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/pdv_itens.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="1683" max-vertical-offset="2686">
+          <caret line="107" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="152" selection-end-column="2" />
+          <folding>
+            <marker date="1433134417000" expanded="true" signature="759:827" placeholder="select conec..cliente..." />
+            <marker date="1433134417000" expanded="true" signature="1521:1556" placeholder="SELECT id as..produto..." />
+            <marker date="1433134417000" expanded="true" signature="2512:2543" placeholder="select * fro..produto..." />
+            <marker date="1433134417000" expanded="true" signature="2649:2695" placeholder="select * fro..produto_imagem..." />
+            <marker date="1433134417000" expanded="true" signature="3207:3277" placeholder="select * fro..administrativo..." />
+            <marker date="1433134417000" expanded="true" signature="3420:3508" placeholder="select hp_ho..produto..." />
+            <marker date="1433134417000" expanded="false" signature="4545:4590" placeholder="..." />
+            <marker date="1433134417000" expanded="true" signature="5949:5997" placeholder="update pdv s..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastrarPDV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3326886" vertical-offset="8430" max-vertical-offset="15062">
+          <caret line="506" column="29" selection-start-line="506" selection-start-column="24" selection-end-line="506" selection-end-column="29" />
+          <folding>
+            <element signature="e#7#244#0#PHP" expanded="true" />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..produto..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..produto..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select id as..empresa..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..administrativo..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select hp_ho..produto..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..administrativo..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select nome,..produto..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update produ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select id as..empresa..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update pdv s..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..administrativo..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select hp_ho..produto..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select preco..pdv_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..administrativo..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select nome,..produto..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update produ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select id as..conta..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select sum(v..conta_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update conta..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update conta..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select id_pr..pdv_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select nome,..produto..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update produ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select quant..pdv_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..administrativo..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select sum(v..conta_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select id_ca..conta_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update conta..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update conta..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..tokens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select vezes..tokens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select id_pr..pdv_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select nome,..produto..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update produ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select quant..pdv_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..administrativo..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select sum(v..conta_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update conta..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update conta..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="update token..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..pdv..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select nome ..pdv..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select max(i..pdv..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..pdv_itens..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select sum(v..conta_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select id fr..conta..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..conta..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select sum(v..conta_itens..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select min(i..conta_itens..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select * fro..pagamento_tipo_sub..." />
+            <marker date="1433134014000" expanded="true" signature="-1:-1" placeholder="select id_ca..caixa_movimento..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/funcoes.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8703704" vertical-offset="38316" max-vertical-offset="74086">
+          <caret line="2263" column="12" selection-start-line="2263" selection-start-column="12" selection-end-line="2264" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pdvFiltro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+          <caret line="22" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cadastrarProdutoFiltro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.678571" vertical-offset="0" max-vertical-offset="2516">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/ajaxProduto.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-38.576923" vertical-offset="561" max-vertical-offset="2142">
+          <caret line="92" column="69" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
+          <folding>
+            <marker date="1439364968321" expanded="true" signature="805:873" placeholder="select conec..cliente..." />
+            <marker date="1439364968321" expanded="true" signature="1522:1557" placeholder="SELECT id as..produto..." />
+            <marker date="1439364968321" expanded="true" signature="2627:2658" placeholder="select * fro..produto..." />
+            <marker date="1439364968321" expanded="true" signature="2800:2846" placeholder="select * fro..produto_imagem..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cadastrarProdutoFormulario.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="6171">
+          <caret line="111" column="35" selection-start-line="111" selection-start-column="35" selection-end-line="111" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastrarProduto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39449543" vertical-offset="7537" max-vertical-offset="9486">
+          <caret line="456" column="12" selection-start-line="456" selection-start-column="12" selection-end-line="456" selection-end-column="12" />
+          <folding>
+            <marker date="1439365433042" expanded="false" signature="364:375" placeholder="..." />
+            <marker date="1439365433042" expanded="true" signature="818:854" placeholder="select * fro..produto..." />
+            <marker date="1439365433042" expanded="false" signature="2421:2433" placeholder="..." />
+            <marker date="1439365433042" expanded="false" signature="2668:2680" placeholder="..." />
+            <marker date="1439365433042" expanded="true" signature="3994:4082" placeholder="select id_ca..sub_categoria..." />
+            <marker date="1439365433042" expanded="false" signature="4758:4779" placeholder="..." />
+            <marker date="1439365433042" expanded="true" signature="7350:7405" placeholder="select * fro..produto_tributacao..." />
+            <marker date="1439365433042" expanded="true" signature="11582:11642" placeholder="select valor..administrativo..." />
+            <marker date="1439365433042" expanded="true" signature="11867:12032" placeholder="..." />
+            <marker date="1439365433042" expanded="true" signature="11880:12020" placeholder="{...}" />
+            <marker date="1439365433042" expanded="false" signature="12149:12171" placeholder="..." />
+            <marker date="1439365433042" expanded="true" signature="13885:13964" placeholder="select * fro..administrativo..." />
+            <marker date="1439365433042" expanded="true" signature="14334:14389" placeholder="select * fro..produto_subestoque..." />
+            <marker date="1439365433042" expanded="true" signature="15538:15552" placeholder="..." />
+            <marker date="1439365433042" expanded="true" signature="15567:15579" placeholder="..." />
+            <marker date="1439365433042" expanded="true" signature="15995:16046" placeholder="select * fro..produto_imagem..." />
+            <marker date="1439365433042" expanded="true" signature="16140:16169" placeholder="..." />
+            <marker date="1439365433042" expanded="true" signature="18014:18057" placeholder="select nome ..produto..." />
+            <marker date="1439365433042" expanded="true" signature="18193:18246" placeholder="select nome ..produto..." />
+            <marker date="1439365433042" expanded="true" signature="18408:18465" placeholder="select nome ..produto..." />
+            <marker date="1439365433042" expanded="true" signature="18603:18670" placeholder="select nome ..produto..." />
+            <marker date="1439365433042" expanded="true" signature="18892:18911" placeholder="insert into ..." />
+            <marker date="1439365433042" expanded="true" signature="19687:19717" placeholder="insert into ..." />
+            <marker date="1439365433042" expanded="true" signature="20188:20254" placeholder="delete from ..." />
+            <marker date="1439365433042" expanded="true" signature="20886:20904" placeholder="update produ..." />
+            <marker date="1439365433042" expanded="true" signature="21598:21651" placeholder="delete from ..." />
+            <marker date="1439365433042" expanded="true" signature="21671:21701" placeholder="insert into ..." />
+            <marker date="1439365433042" expanded="true" signature="22717:22761" placeholder="update produ..." />
+            <marker date="1439365433042" expanded="true" signature="22925:22969" placeholder="update produ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

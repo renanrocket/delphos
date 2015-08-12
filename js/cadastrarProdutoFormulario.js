@@ -2,6 +2,29 @@
 //funcao para adicionar ou remover item de item
 $(function() {
 
+    $(".removerCampoItem").click(function() {
+        $('#qtdProdutoSubEstoque').val(parseInt($('#qtdProdutoSubEstoque').val()) - 1);
+        for (var i = 1; i <= 99; i++) {
+            if (i <= $('#qtdProdutoSubEstoque').val()) {
+                $('#trProdutoSubEstoque_' + i).show();
+            } else {
+                $('#trProdutoSubEstoque_' + i).hide();
+            }
+        }
+    });
+    $(".adicionarCampoItem").click(function() {
+
+        $('#qtdProdutoSubEstoque').val(parseInt($('#qtdProdutoSubEstoque').val()) + 1);
+
+        for (var i = 1; i <= 99; i++) {
+            if (i <= $('#qtdProdutoSubEstoque').val()) {
+                $('#trProdutoSubEstoque_' + i).show();
+            } else {
+                $('#trProdutoSubEstoque_' + i).hide();
+            }
+        }
+    });
+
 	$(".removerCampo").click(function() {
 		$('#qtdTributacao').val(parseInt($('#qtdTributacao').val()) - 1);
 		if ($("#qtdTributacao").val() < 1) {
@@ -65,6 +88,35 @@ $(function() {
 	});
 });
 
+function showSubEstSug(valor, id){
+    if(valor.length == 0) {
+        // Hide the suggestion box.
+        $('#produtoSubEstoqueSug_'+id).hide();
+    } else {
+        $('#produtoSubEstoqueSug_'+id).show();
+        var cod = "<center><img width='30' src='img/loading.gif'></center>";
+        $('#produtoSubEstoqueSugList_'+id).html(cod);
+        $.post("inc/ajaxProduto.inc.php", {
+            queryString: valor,
+            linha: id
+        }, function(data){
+            if(data.length >0) {
+                $('#produtoSubEstoqueSug_'+id).show();
+                $('#produtoSubEstoqueSugList_'+id).html(data);
+            }
+        });
+
+    }
+}
+
+function preencher(nome,id, linha){
+    $('.suggestionsBox').hide();
+    $('.suggestionList').html('');
+    $('#produtoSubEstoqueNome_'+linha).val(nome);
+    $('#produtoSubEstoqueId_'+linha).val(id);
+
+
+}
 function calcularhora(){
     var horaInicial = $("input[name='hp_hora_inicial'").val();
     var horaFinal = $("input[name='hp_hora_final'").val();

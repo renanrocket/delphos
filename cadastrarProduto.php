@@ -165,7 +165,7 @@ function produto($ID = null) {
     mysqli_num_rows($sql) == 0 ? $qtdTributacao = 1 : $qtdTributacao = mysqli_num_rows($sql);
     echo "<tr>";
     echo "<td>";
-    echo "<a href='#campoItem' class='adicionarCampo' title='Adicionar Tributação'><img src='img/mais.png' width='30'></a>";
+    echo "<a href='#campoItem' class='adicionarCampo' title='Adicionar Tributação'><img src='img/mais.png'></a>";
     echo "<input type='hidden' name='qtdTributacao' id='qtdTributacao' value='$qtdTributacao'>";
     echo "</td>";
     echo "<td>Nome da tributação</td>";
@@ -298,6 +298,43 @@ function produto($ID = null) {
     echo "<td>Valor de ponto para troca<br><input type='text' name='ponto_valor' value='".real($ponto_valor)."' class='totalValor ponto $class' ".mascara("Valor2")."</td>";
     echo "</tr>";
 
+    $sql = query("select * from administrativo where taxonomia='controleEstoquePdv' and valor='1'");
+    if(mysqli_num_rows($sql)){
+        echo "<tr>";
+        echo "<th>";
+        echo "<a href='#campoItem' class='adicionarCampoItem' title='Adicionar Item'><img src='img/mais.png'></a>";
+        echo "</th>";
+        echo "<th colspan='4'>Ao produzir este produto, foi necessário utilizar quais outros produtos?</th>";
+        echo "</tr>";
+
+        $sql = query("select * from produto_subestoque where id_produto='$ID'");
+        $qtdProdutoSubEstoque = mysqli_num_rows($sql);
+        echo "<input type='hidden' id='qtdProdutoSubEstoque' name='qtdProdutoSubEstoque' value='$qtdProdutoSubEstoque'>";
+
+        for($i=1; $i<=99; $i++){
+            $qtdProdutoSubEstoque>=$i ? extract(mysqli_fetch_assoc($sql)): $id_produto_subestoque = $qtd = null;
+            if($i<=$qtdProdutoSubEstoque){
+                $style = "";
+            }else{
+                $style = "style='display:none;'";
+            }
+            echo "<tr id='trProdutoSubEstoque_$i' $style>";
+            echo "<td><a href='#campoItem' class='removerCampoItem' title='Remover Item'><img src='img/menos.png'></a></td>";
+            echo "<td colspan='2'>";
+            echo "<input type='hidden' name='produtoSubEstoqueId[]' id='produtoSubEstoqueId_$i' value='$id_produto_subestoque'>";
+            echo "<input type='text' placeholder='Nome do produto' id='produtoSubEstoqueNome_$i' name='produtoSubEstoque[]' onkeyup='showSubEstSug(this.value, $i)' value='".registro($id_produto_subestoque, 'produto', 'nome')."'>";
+            echo "<div class='suggestionsBox' id='produtoSubEstoqueSug_$i' style='display: none;'><span style='float:right;'><input type='button' id='deletar' value='X' onclick=\"lookupOff();\"></span>";
+            echo "<div class='suggestionList' id='produtoSubEstoqueSugList_$i'></div></div>";
+            echo "</td>";
+            echo "<td colspan='2'><input type='text' placeholder='Quantidade' name='produtoSubEstoqueQtd[]' value='$qtd' ".mascara('Valor')."></td>";
+            echo "</tr>";
+        }
+
+
+
+    }
+
+
     $sql = query("select * from produto_imagem where id_produto='$ID'");
     $imagensQtd = mysqli_num_rows($sql);
 
@@ -413,6 +450,12 @@ if(!isset($op)){
 			$instrucao .= "('$chave_principal', '$tributacao[$i]', '$tipo_valor[$i]', '$tributacaoValor[$i]')";
 		}
 		$sql = query($instrucao);
+
+        //inserir no estoque sub se houver
+        if(isset($qtdProdutoSubEstoque)){
+            $sql = query('delete from produto_subestoque where id_produto="$chave_principal"');
+            
+        }
 	
 		if (mysqli_affected_rows($conexao) > 0) {
 	
